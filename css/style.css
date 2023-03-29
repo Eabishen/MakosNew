@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    color: #fff;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    color: #f0f0f0;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+#main-cover {
+    background: rgb(0, 39, 89);
+    background: linear-gradient(180deg, rgba(0, 39, 89, 1) 30%, rgba(1, 14, 31, 1) 100%);
+    min-height: 100vh;
+}
+
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99999;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    transition: all 300ms ease;
+}
+
+.stickybox {
+    background: rgba(0, 39, 89, 1);
+    box-shadow: 0px 0px 20px #479bfc1e;
+}
+
+.cta-btn {
+    padding: 8px 20px;
+    background-color: #0060CE;
+    text-align: center;
+    min-width: 130px;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px #479CFC;
+    font-size: 16pxs;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    transition: background-color 300ms ease;
+}
+
+.cta-btn:hover {
+    background-color: #0060cedc;
+}
+
+.navitem {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.hamburgermenu {
+    font-size: 28px;
+    display: none;
+}
+
+#Home {
+    padding-block: 5rem 2rem;
+    position: relative;
+    overflow-y: hidden;
+}
+
+.toplanding {
+    text-align: center;
+}
+
+.toplanding .landing-h1 {
+    font-size: 12vh;
+    font-weight: 900;
+    margin-bottom: 2.5rem;
+}
+
+.toplanding .text-overlay {
+    background: linear-gradient(235.81deg, #0C6DFF 20.53%, #003F9C 86.31%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bottomlanding {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.bottomlanding .card-wrapper {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+    margin-block: 5rem 1rem;
+}
+
+.bottomlanding .card-wrapper .topcard {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(239.33deg, #0075FF 3.46%, #0032B3 92.19%, #172BCB 92.2%);
+    border: 1px solid #FFFFFF;
+    box-shadow: 0px 0px 30px #44DDFF, inset 0px 0px 4px rgba(255, 255, 255, 0.22);
+    border-radius: 100vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bottomlanding .card-wrapper .topcard svg {
+    width: 40px;
+    height: 40px;
+}
+
+.bottomlanding .card-wrapper .bottomcard {
+    min-height: 100px;
+    background: linear-gradient(180deg, #0057FF 0%, rgba(0, 77, 149, 0) 100%);
+    filter: drop-shadow(0px -21px 20px #19576E);
+    border-radius: 15px;
+    padding: 10px 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #C6C6C6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 300px;
+
+}
+
+.circle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: -15%;
+    left: 50%;
+    transform: translateX(-50%);
+    filter: blur(79px);
+    background: linear-gradient(180deg, #489EFF 0%, rgba(0, 77, 149, 0) 004594%);
+}
+
+.scrollmore {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.scrollmore .learn {
+    margin-bottom: 15px;
+}
+
+/*Second section */
+
+#whoweare {
+    min-height: 100vh;
+    background: #021023;
+    box-shadow: 0px 0px 100px #506BFC;
+    padding-bottom: 6rem;
+    position: relative;
+    z-index: 2;
+}
+
+.whowrapper {
+    padding-top: 10px;
+}
+
+.smallheading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.smallheading p {
+    margin-bottom: 0;
+}
+
+.smallheading p>span {
+    margin-right: 5px;
+}
+
+.bluecolor {
+    color: #506BFC;
+}
+
+.tealcolor {
+    color: #31D7B9;
+}
+
+.pinkcolor {
+    color: #E64467;
+}
+
+.linedivider {
+    flex: 1;
+    height: 2px;
+    border-radius: 100vmax;
+    background-color: #505050;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.5) -1.52%, rgba(0, 0, 0, 0) 109.98%);
+
+}
+
+.bigheadingwrapper {
+    display: flex;
+    align-items: start;
+    gap: 2rem;
+    margin-bottom: 8rem;
+}
+
+.secondiconwrapper {
+    width: 57px;
+    height: 57px;
+    background: #506BFC;
+    box-shadow: 0px 0px 30px #6F85FF, inset 0px 0px 4px #FFFFFF;
+    border-radius: 100vmax;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contentsecond .subheader h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 55%;
+    margin-bottom: 10px;
+
+}
+
+.contentsecond .subheader h2 span {
+    color: #506BFC;
+}
+
+.contentsecond .subheader p {
+    width: 55%;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #C6C6C6;
+
+}
+
+.imagefeature {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    gap: 2rem;
+}
+
+.featureimage {
+    text-align: center;
+    flex: 1;
+    position: relative;
+}
+
+.imgbox {
+    width: 80%;
+    height: 120%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(176.09deg);
+    background: linear-gradient(239.33deg, #506BFC 3.46%, #2F41A4 92.21%);
+    border: 2px solid #506BFC;
+    box-shadow: -62.125px 99.1438px 136px rgba(80, 107, 252, 0.22), -40.2662px 64.2598px 79.6481px rgba(80, 107, 252, 0.16), -23.9296px 38.1887px 43.3185px rgba(80, 107, 252, 0.13), -12.425px 19.8288px 22.1px rgba(80, 107, 252, 0.13), -5.06204px 8.07838px 11.0815px rgba(80, 107, 252, 0.08), -1.15046px 1.836px 5.35185px rgba(80, 107, 252, 0.05);
+    border-radius: 10px;
+}
+
+.featureimage img {
+    position: relative;
+    z-index: 2;
+}
+
+.featurelists {
+    margin-bottom: 1rem;
+}
+
+.contentfeature {
+    flex: 1;
+}
+
+.contentfeature .itemsfeatures {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.namefeature {
+    font-size: 18px;
+}
+
+.namefeature .mainName {
+    font-weight: 500;
+    color: #99C8FF;
+    margin-bottom: 05px;
+}
+
+.namefeature .positionName {
+    color: #C6C6C6;
+}
+
+/* Service Section */
+
+#service {
+    min-height: 100vh;
+    background-color: #001F4D;
+    background: url("../assets/Vector.png") no-repeat top;
+    background-size: cover;
+    position: relative;
+    padding-top: 3rem;
+
+}
+
+.serviceWrapper {
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.serviceTopcontainer {
+    margin-bottom: 4rem;
+}
+
+.serviceWrapper .servicesmall {
+    margin-bottom: 1rem;
+}
+
+.serviceWrapper .servicesmall p {
+    letter-spacing: 0.1em;
+}
+
+.mainservice {
+    margin-bottom: 2rem;
+}
+
+.serviceWrapper h3 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.servicetext {
+    background: linear-gradient(180deg, #FF007A -0%, #18ACFF 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.servicedesc {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    text-align: center;
+    color: #C6C6C6;
+    width: 50%;
+    margin-inline: auto;
+}
+
+.serviceBottomcontainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.servicecardrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    text-align: left;
+}
+
+.serviceCard {
+    min-width: 360px;
+
+}
+
+.serviceIcons {
+    align-self: start;
+}
+
+.serviceCard .lineartext {
+    background: linear-gradient(180deg, #9949FF 0%, #436CFF 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: 0em;
+    margin-block: 10px;
+}
+
+.learnmore {
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Process section */
+
+#process {
+    min-height: 100vh;
+    /* background-color: #001F4D; */
+    background: url("../assets/process.png") no-repeat center;
+    background-size: cover;
+    position: relative;
+    padding-top: 3rem;
+}
+
+.smallheading.servicesmall .linedivider {
+    transform: rotate(180deg);
+}
+
+.bigheadingwrapper.serviceprocess {
+    flex-direction: row-reverse !important;
+}
+
+.bigheadingwrapper.serviceprocess .subheader span,
+.clipteal {
+    background: linear-gradient(269.68deg, #00C187 0%, #00C2FF 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.bigheadingwrapper.serviceprocess .subheader h2 {
+    margin-left: auto;
+    text-align: right;
+}
+
+.bigheadingwrapper.serviceprocess .subheader p {
+    margin-left: auto;
+    text-align: right;
+}
+
+.flex-left {
+    display: flex;
+    justify-content: start;
+}
+
+.flex-left p,
+.flex-left h4 {
+    text-align: end;
+}
+
+.flex-left p {
+    width: 100%;
+    margin-left: auto;
+}
+
+.flex-right {
+    display: flex;
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.flex-left .processtext {
+    flex: 0.5;
+}
+
+.flex-left .processimage {
+    flex: 3;
+}
+
+
+.flex-right .processtext {
+    flex: 2;
+}
+
+.flex-right .processimage {
+    flex: 1;
+}
+
+.flex-right .processimage img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.flex-right p {
+    width: 40%;
+    margin-left: auto;
+}
+
+.secondiconwrapper.processiconwrapper {
+    background: #2E9F8B;
+    box-shadow: 0px 0px 30px #2E9F8B, inset 0px 0px 4px #FFFFFF;
+}
+
+/* Testimonial section */
+
+#testimonials {
+    min-height: 100vh;
+    background: linear-gradient(180deg, #010108 0%, #010109 100%);
+    padding-block: 3rem;
+}
+
+.secondiconwrapper.testimonialsiconwrapper {
+    background: #E64467;
+    box-shadow: 0px 0px 30px #E64467, inset 0px 0px 4px #FFFFFF;
+}
+
+.bigheadingwrapper.testimonialcover .subheader span {
+    background: linear-gradient(180deg, #E64467 39.58%, #7E5CC5 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.testimonialcardwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.testimonialcard {
+    background: linear-gradient(0deg, #161E25, #161E25), #393E35;
+    border-radius: 10px;
+    text-align: center;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    min-height: 300px;
+    min-width: 340px;
+    position: relative;
+    padding: 1rem;
+
+}
+
+.test-img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -50px;
+}
+
+.qoutetesti {
+    padding-block: 3rem 1rem;
+}
+
+.qoutetesti img {
+    width: 80%;
+}
+
+.testimonialcard .commenttesti {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}
+
+.nametesti {
+    margin-top: 1rem;
+    font-size: 800;
+    font-size: 20px;
+    color: #C6C6C6;
+}
+
+.positiontesti {
+    color: #C6C6C6;
+    font-size: 16px;
+}
+
+
+
+/* Mobile */
+
+@media (max-width:900px) {
+    * {
+        /* border: 1px solid red; */
+    }
+
+    .navitem {
+        display: none;
+    }
+
+    .cta {
+        display: none;
+    }
+
+    .hamburgermenu {
+        display: block;
+    }
+
+    .bottomlanding {
+        flex-direction: column;
+    }
+
+    .testimonialcardwrapper {
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .testimonialcard {
+        min-width: fit-content;
+    }
+
+    .contentsecond .subheader h2 {
+        font-size: 24px;
+        line-height: normal;
+        width: 100%;
+    }
+
+    .contentsecond .subheader p {
+        width: 100%;
+    }
+
+    .imagefeature {
+        flex-direction: column;
+
+    }
+
+    .serviceBottomcontainer {
+        align-items: center;
+    }
+
+    .servicecardrow {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .serviceCard {
+        min-width: 90%;
+    }
+
+}
