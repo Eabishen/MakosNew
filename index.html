@@ -11,29 +11,117 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header id="headed">
-        <nav class="navigation" id="NavBar">
-            <div class="navbrand">
+
+    <header class="header" id="headed">
+        <nav class="cust-nav cust-container">
+            <div class="nav__data">
                 <a href="">
+                    <i></i>
                     <img src="./assets/MakosLogo.svg" alt="">
                 </a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
             </div>
-            <div class="navitem">
-                <div><a href="#">Home</a></div>
-                <div><a href="#">About Us</a></div>
-                <div><a href="#">Service</a></div>
-                <div><a href="#">Blog</a></div>
-                <div><a href="#">Contact</a></div>
-            </div>
-            <div class="cta">
-                <button class="cta-btn">Let's Talk</button>
-            </div>
-            <div class="hamburgermenu">
-                <i class="fa-solid fa-bars"></i>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <div class="nav__mainli">
+                        <li>
+                            <a href="" class="nav__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">About Us</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Service <i class="ri-arrow-down-s-line dropdown__arrow"></i>
+                            </div>
+
+                            <div class="dropdown__container">
+                                <div class="dropdown__content">
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-fill"></i>
+                                        </div>
+                                        <span class="dropdown__title">Service We Offer</span>
+                                        <ul class="dropdown__list">
+
+                                            <li>
+                                                <a href="#" class="dropdown__link">Jobaskit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Makos Digital</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Finistant</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-fill"></i>
+                                        </div>
+                                        <span class="dropdown__title">Service We Offer</span>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Jobaskit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Makos Digital</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Finistant</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-fill"></i>
+                                        </div>
+                                        <span class="dropdown__title">Service We Offer</span>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Jobaskit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Makos Digital</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Finistant</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">Contact</a>
+                        </li>
+                    </div>
+                    <div>
+
+                        <li class="">
+                            <button class="cta-btn">Let's Talk</button>
+                        </li>
+                    </div>
+                </ul>
+
             </div>
         </nav>
     </header>
@@ -315,9 +403,6 @@
                                 <a href="">Learn More <span class="rightIcons">></span></a>
                             </div>
                         </div>
-
-                    </div>
-                    <div class="servicecardrow">
                         <div class="serviceCard">
                             <div class="serviceIcons">
                                 <svg width="50" height="56" viewBox="0 0 50 56" fill="none"
@@ -421,6 +506,7 @@
                         </div>
                     </div>
 
+
                 </div>
             </div>
         </div>
@@ -467,115 +553,72 @@
 
                     </div>
                 </div>
-                <div class="flex-left">
-                    <div class="processtext">
-                        <h4 class="clipteal">Discover</h4>
-                        <p>Every project starts with understanding
-                            the challenge and the landscape...</p>
+                <div class="grid-left">
+                    <div class="leftbox">
+                        <div>
+                            <div class="clipteal">
+                                Discover
+                            </div>
+                            <div>
+                                Every project starts with understanding the challenge and the landscape...
+
+                            </div>
+                        </div>
+                        <div><img src="./assets/process/process1.png" alt=""></div>
                     </div>
-                    <div class="processimage">
-                        <svg width="415" height="328" viewBox="0 0 415 328" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g filter="url(#filter0_d_1522_1061)">
-                                <rect x="35" y="22" width="362" height="271" rx="10" fill="#171E25" />
-                                <rect x="35.5" y="22.5" width="361" height="270" rx="9.5" stroke="#868686"
-                                    stroke-opacity="0.1" />
-                            </g>
-                            <circle cx="393.5" cy="21.5" r="21.5" fill="#171E25" />
-                            <circle cx="393.5" cy="21.5" r="21" stroke="#868686" stroke-opacity="0.1" />
-                            <rect x="65" y="54" width="301" height="202" rx="10" fill="#A7B5C4" fill-opacity="0.1" />
-                            <path
-                                d="M395.322 14.4545V29H393.561V16.3011H393.476L389.925 18.6591V16.8693L393.561 14.4545H395.322Z"
-                                fill="white" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M329.551 146.557L327.53 148.397C327.406 148.51 327.205 148.51 327.081 148.397L325.059 146.557C324.935 146.445 324.935 146.262 325.059 146.149C325.183 146.036 325.384 146.036 325.508 146.149L326.988 147.495L326.988 122.75L327.623 122.75L327.623 147.495L329.102 146.149C329.226 146.036 329.427 146.036 329.551 146.149C329.676 146.262 329.676 146.445 329.551 146.557Z"
-                                fill="#A7B5C4" />
-                            <path
-                                d="M77 94.8846C77 90.5301 79.6609 87 82.9434 87H134.057C137.339 87 140 90.5301 140 94.8846V120.115C140 124.47 137.339 128 134.057 128H82.9434C79.6609 128 77 124.47 77 120.115V94.8846Z"
-                                fill="#A7B5C4" />
-                            <path
-                                d="M306.25 154.331C306.25 151.101 308.939 148.482 312.256 148.482H344.69C348.007 148.482 350.696 151.101 350.696 154.331V163.688C350.696 166.918 348.007 169.536 344.69 169.536H312.256C308.939 169.536 306.25 166.918 306.25 163.688V154.331Z"
-                                fill="#A7B5C4" />
-                            <path
-                                d="M296.895 194.548C296.895 191.07 299.562 188.25 302.853 188.25H354.097C357.388 188.25 360.055 191.07 360.055 194.548V214.702C360.055 218.18 357.388 221 354.097 221H302.853C299.562 221 296.895 218.18 296.895 214.702V194.548Z"
-                                fill="#A7B5C4" />
-                            <path
-                                d="M294.555 100.758C294.555 97.4 297.222 94.6777 300.513 94.6777H351.757C355.048 94.6777 357.715 97.4 357.715 100.758V114.48C357.715 119.426 352.151 122.295 347.596 120.605C335.744 116.206 328.858 122.711 319.442 126.296C314.471 128.188 306.835 127.268 300.499 126.671C297.222 126.361 294.555 123.573 294.555 120.215V100.758Z"
-                                fill="#A7B5C4" />
-                            <path
-                                d="M161.867 97.2988C162.313 94.4458 164.804 92.3398 167.734 92.3398H213.759C217.442 92.3398 220.236 95.61 219.608 99.1854L216.321 117.9C215.828 120.703 213.359 122.751 210.472 122.751H164.812C161.174 122.751 158.392 119.556 158.945 116.013L161.867 97.2988Z"
-                                fill="#A7B5C4" />
-                            <path
-                                d="M229.237 193.732C229.622 190.596 232.131 188.25 235.1 188.25H272.265C275.873 188.25 278.64 191.662 278.115 195.464L275.335 215.618C274.908 218.709 272.418 221 269.484 221H232.629C229.059 221 226.303 217.656 226.766 213.886L229.237 193.732Z"
-                                fill="#A7B5C4" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M156.958 106.468L158.79 108.49C158.903 108.614 158.903 108.815 158.79 108.939L156.958 110.961C156.845 111.085 156.663 111.085 156.551 110.961C156.438 110.836 156.438 110.635 156.551 110.511L157.891 109.032H140.16V108.397H157.891L156.551 106.917C156.438 106.793 156.438 106.592 156.551 106.468C156.663 106.344 156.845 106.344 156.958 106.468Z"
-                                fill="#A7B5C4" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M294.737 204.718L296.799 206.74C296.925 206.864 296.925 207.065 296.799 207.189L294.737 209.211C294.611 209.335 294.406 209.335 294.279 209.211C294.153 209.086 294.153 208.885 294.279 208.761L295.788 207.282H275.84V206.647H295.788L294.279 205.167C294.153 205.043 294.153 204.842 294.279 204.718C294.406 204.594 294.611 204.594 294.737 204.718Z"
-                                fill="#A7B5C4" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M292.628 106.468L294.468 108.49C294.581 108.614 294.581 108.815 294.468 108.939L292.628 110.961C292.515 111.085 292.332 111.085 292.219 110.961C292.106 110.836 292.106 110.635 292.219 110.511L293.565 109.032H268.82V108.397H293.565L292.219 106.917C292.106 106.793 292.106 106.592 292.219 106.468C292.332 106.344 292.515 106.344 292.628 106.468Z"
-                                fill="#A7B5C4" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M234.153 106.468L235.985 108.49C236.098 108.614 236.098 108.815 235.985 108.939L234.153 110.961C234.041 111.085 233.858 111.085 233.746 110.961C233.634 110.836 233.634 110.635 233.746 110.511L235.087 109.032H217.355V108.397H235.087L233.746 106.917C233.634 106.793 233.634 106.592 233.746 106.468C233.858 106.344 234.041 106.344 234.153 106.468Z"
-                                fill="#A7B5C4" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M256.92 186.031L255.192 187.913C255.086 188.029 254.914 188.029 254.808 187.913L253.08 186.031C252.973 185.916 252.973 185.728 253.08 185.613C253.186 185.497 253.358 185.497 253.464 185.613L254.728 186.99L254.728 125L255.272 125L255.272 186.99L256.536 185.613C256.642 185.497 256.814 185.497 256.92 185.613C257.027 185.728 257.027 185.916 256.92 186.031Z"
-                                fill="#A7B5C4" />
-                            <path
-                                d="M249.535 94.2226C251.867 91.8905 255.648 91.8905 257.98 94.2226L268.644 104.887C270.976 107.219 270.976 111 268.644 113.332L257.98 123.996C255.648 126.328 251.867 126.328 249.535 123.996L238.871 113.332C236.539 111 236.539 107.219 238.871 104.887L249.535 94.2226Z"
-                                fill="#A7B5C4" />
-                            <path
-                                d="M82.2124 109V103.182H84.1783C84.6328 103.182 85.0059 103.259 85.2976 103.415C85.5893 103.568 85.8052 103.779 85.9453 104.048C86.0855 104.317 86.1555 104.623 86.1555 104.966C86.1555 105.309 86.0855 105.613 85.9453 105.878C85.8052 106.143 85.5902 106.351 85.3004 106.503C85.0107 106.652 84.6404 106.727 84.1896 106.727H82.5987V106.091H84.1669C84.4775 106.091 84.7275 106.045 84.9169 105.955C85.1082 105.864 85.2464 105.735 85.3317 105.568C85.4188 105.4 85.4624 105.199 85.4624 104.966C85.4624 104.733 85.4188 104.529 85.3317 104.355C85.2446 104.181 85.1054 104.046 84.9141 103.952C84.7228 103.855 84.4699 103.807 84.1555 103.807H82.9169V109H82.2124ZM84.951 106.386L86.3828 109H85.5646L84.1555 106.386H84.951ZM89.0213 109.091C88.6009 109.091 88.2382 108.998 87.9332 108.812C87.6302 108.625 87.3963 108.364 87.2315 108.028C87.0687 107.691 86.9872 107.299 86.9872 106.852C86.9872 106.405 87.0687 106.011 87.2315 105.67C87.3963 105.328 87.6255 105.061 87.919 104.869C88.2145 104.676 88.5592 104.58 88.9531 104.58C89.1804 104.58 89.4048 104.617 89.6264 104.693C89.848 104.769 90.0497 104.892 90.2315 105.062C90.4134 105.231 90.5582 105.455 90.6662 105.733C90.7741 106.011 90.8281 106.354 90.8281 106.761V107.045H87.4645V106.466H90.1463C90.1463 106.22 90.0971 106 89.9986 105.807C89.902 105.614 89.7637 105.461 89.5838 105.349C89.4058 105.238 89.1955 105.182 88.9531 105.182C88.6861 105.182 88.455 105.248 88.2599 105.381C88.0668 105.511 87.9181 105.682 87.8139 105.892C87.7098 106.102 87.6577 106.328 87.6577 106.568V106.955C87.6577 107.284 87.7145 107.563 87.8281 107.793C87.9437 108.02 88.1037 108.193 88.3082 108.312C88.5128 108.43 88.7505 108.489 89.0213 108.489C89.1974 108.489 89.3565 108.464 89.4986 108.415C89.6425 108.364 89.7666 108.288 89.8707 108.188C89.9749 108.085 90.0554 107.958 90.1122 107.807L90.7599 107.989C90.6918 108.208 90.5772 108.402 90.4162 108.568C90.2552 108.733 90.0563 108.862 89.8196 108.955C89.5829 109.045 89.3168 109.091 89.0213 109.091ZM93.6207 109.091C93.2116 109.091 92.8594 108.994 92.5639 108.801C92.2685 108.608 92.0412 108.342 91.8821 108.003C91.723 107.664 91.6435 107.277 91.6435 106.841C91.6435 106.398 91.7249 106.007 91.8878 105.668C92.0526 105.327 92.2817 105.061 92.5753 104.869C92.8707 104.676 93.2154 104.58 93.6094 104.58C93.9162 104.58 94.1927 104.636 94.4389 104.75C94.6851 104.864 94.8868 105.023 95.044 105.227C95.2012 105.432 95.2988 105.67 95.3366 105.943H94.6662C94.6151 105.744 94.5014 105.568 94.3253 105.415C94.151 105.259 93.9162 105.182 93.6207 105.182C93.3594 105.182 93.1302 105.25 92.9332 105.386C92.7382 105.521 92.5857 105.711 92.4759 105.957C92.3679 106.202 92.3139 106.489 92.3139 106.818C92.3139 107.155 92.367 107.449 92.473 107.699C92.581 107.949 92.7325 108.143 92.9276 108.281C93.1245 108.42 93.3556 108.489 93.6207 108.489C93.795 108.489 93.9531 108.458 94.0952 108.398C94.2372 108.337 94.3575 108.25 94.456 108.136C94.5545 108.023 94.6245 107.886 94.6662 107.727H95.3366C95.2988 107.985 95.205 108.217 95.0554 108.423C94.9077 108.628 94.7116 108.791 94.4673 108.912C94.2249 109.031 93.9427 109.091 93.6207 109.091ZM98.1463 109.091C97.7259 109.091 97.3632 108.998 97.0582 108.812C96.7552 108.625 96.5213 108.364 96.3565 108.028C96.1937 107.691 96.1122 107.299 96.1122 106.852C96.1122 106.405 96.1937 106.011 96.3565 105.67C96.5213 105.328 96.7505 105.061 97.044 104.869C97.3395 104.676 97.6842 104.58 98.0781 104.58C98.3054 104.58 98.5298 104.617 98.7514 104.693C98.973 104.769 99.1747 104.892 99.3565 105.062C99.5384 105.231 99.6832 105.455 99.7912 105.733C99.8991 106.011 99.9531 106.354 99.9531 106.761V107.045H96.5895V106.466H99.2713C99.2713 106.22 99.2221 106 99.1236 105.807C99.027 105.614 98.8887 105.461 98.7088 105.349C98.5308 105.238 98.3205 105.182 98.0781 105.182C97.8111 105.182 97.58 105.248 97.3849 105.381C97.1918 105.511 97.0431 105.682 96.9389 105.892C96.8348 106.102 96.7827 106.328 96.7827 106.568V106.955C96.7827 107.284 96.8395 107.563 96.9531 107.793C97.0687 108.02 97.2287 108.193 97.4332 108.312C97.6378 108.43 97.8755 108.489 98.1463 108.489C98.3224 108.489 98.4815 108.464 98.6236 108.415C98.7675 108.364 98.8916 108.288 98.9957 108.188C99.0999 108.085 99.1804 107.958 99.2372 107.807L99.8849 107.989C99.8168 108.208 99.7022 108.402 99.5412 108.568C99.3802 108.733 99.1813 108.862 98.9446 108.955C98.7079 109.045 98.4418 109.091 98.1463 109.091ZM100.973 109V104.636H101.643V109H100.973ZM101.314 103.909C101.183 103.909 101.071 103.865 100.976 103.776C100.883 103.687 100.837 103.58 100.837 103.455C100.837 103.33 100.883 103.223 100.976 103.134C101.071 103.045 101.183 103 101.314 103C101.445 103 101.556 103.045 101.649 103.134C101.744 103.223 101.791 103.33 101.791 103.455C101.791 103.58 101.744 103.687 101.649 103.776C101.556 103.865 101.445 103.909 101.314 103.909ZM106.44 104.636L104.826 109H104.144L102.531 104.636H103.258L104.462 108.114H104.508L105.712 104.636H106.44ZM108.998 109.091C108.577 109.091 108.215 108.998 107.91 108.812C107.607 108.625 107.373 108.364 107.208 108.028C107.045 107.691 106.964 107.299 106.964 106.852C106.964 106.405 107.045 106.011 107.208 105.67C107.373 105.328 107.602 105.061 107.896 104.869C108.191 104.676 108.536 104.58 108.93 104.58C109.157 104.58 109.381 104.617 109.603 104.693C109.825 104.769 110.026 104.892 110.208 105.062C110.39 105.231 110.535 105.455 110.643 105.733C110.751 106.011 110.805 106.354 110.805 106.761V107.045H107.441V106.466H110.123C110.123 106.22 110.074 106 109.975 105.807C109.879 105.614 109.74 105.461 109.56 105.349C109.382 105.238 109.172 105.182 108.93 105.182C108.663 105.182 108.432 105.248 108.237 105.381C108.043 105.511 107.895 105.682 107.79 105.892C107.686 106.102 107.634 106.328 107.634 106.568V106.955C107.634 107.284 107.691 107.563 107.805 107.793C107.92 108.02 108.08 108.193 108.285 108.312C108.489 108.43 108.727 108.489 108.998 108.489C109.174 108.489 109.333 108.464 109.475 108.415C109.619 108.364 109.743 108.288 109.847 108.188C109.951 108.085 110.032 107.958 110.089 107.807L110.737 107.989C110.668 108.208 110.554 108.402 110.393 108.568C110.232 108.733 110.033 108.862 109.796 108.955C109.559 109.045 109.293 109.091 108.998 109.091ZM119.075 106.091C119.075 106.705 118.964 107.235 118.742 107.682C118.521 108.129 118.217 108.473 117.83 108.716C117.444 108.958 117.003 109.08 116.506 109.08C116.01 109.08 115.569 108.958 115.183 108.716C114.796 108.473 114.492 108.129 114.271 107.682C114.049 107.235 113.938 106.705 113.938 106.091C113.938 105.477 114.049 104.947 114.271 104.5C114.492 104.053 114.796 103.708 115.183 103.466C115.569 103.223 116.01 103.102 116.506 103.102C117.003 103.102 117.444 103.223 117.83 103.466C118.217 103.708 118.521 104.053 118.742 104.5C118.964 104.947 119.075 105.477 119.075 106.091ZM118.393 106.091C118.393 105.587 118.308 105.162 118.14 104.815C117.973 104.469 117.747 104.206 117.461 104.028C117.177 103.85 116.859 103.761 116.506 103.761C116.154 103.761 115.835 103.85 115.549 104.028C115.265 104.206 115.039 104.469 114.87 104.815C114.703 105.162 114.62 105.587 114.62 106.091C114.62 106.595 114.703 107.02 114.87 107.366C115.039 107.713 115.265 107.975 115.549 108.153C115.835 108.331 116.154 108.42 116.506 108.42C116.859 108.42 117.177 108.331 117.461 108.153C117.747 107.975 117.973 107.713 118.14 107.366C118.308 107.02 118.393 106.595 118.393 106.091ZM120.168 109V104.636H120.816V105.295H120.862C120.941 105.08 121.085 104.904 121.293 104.77C121.502 104.635 121.737 104.568 121.998 104.568C122.047 104.568 122.109 104.569 122.183 104.571C122.256 104.573 122.312 104.576 122.35 104.58V105.261C122.327 105.256 122.275 105.247 122.194 105.236C122.114 105.223 122.03 105.216 121.941 105.216C121.729 105.216 121.54 105.26 121.373 105.349C121.208 105.437 121.077 105.558 120.981 105.713C120.886 105.866 120.839 106.042 120.839 106.239V109H120.168ZM124.66 109.091C124.296 109.091 123.975 108.999 123.697 108.815C123.418 108.63 123.201 108.368 123.043 108.031C122.886 107.692 122.808 107.292 122.808 106.83C122.808 106.371 122.886 105.973 123.043 105.636C123.201 105.299 123.419 105.039 123.7 104.855C123.98 104.671 124.304 104.58 124.671 104.58C124.955 104.58 125.18 104.627 125.344 104.722C125.511 104.814 125.638 104.92 125.725 105.04C125.814 105.157 125.883 105.254 125.933 105.33H125.989V103.182H126.66V109H126.012V108.33H125.933C125.883 108.409 125.813 108.509 125.722 108.631C125.631 108.75 125.502 108.857 125.333 108.952C125.165 109.045 124.94 109.091 124.66 109.091ZM124.751 108.489C125.02 108.489 125.247 108.419 125.433 108.278C125.618 108.136 125.759 107.94 125.856 107.69C125.952 107.438 126.001 107.148 126.001 106.818C126.001 106.492 125.953 106.207 125.859 105.963C125.764 105.717 125.624 105.526 125.438 105.389C125.253 105.251 125.023 105.182 124.751 105.182C124.467 105.182 124.23 105.255 124.04 105.401C123.853 105.545 123.712 105.741 123.617 105.989C123.524 106.235 123.478 106.511 123.478 106.818C123.478 107.129 123.525 107.411 123.62 107.665C123.717 107.917 123.859 108.117 124.046 108.267C124.236 108.415 124.47 108.489 124.751 108.489ZM129.81 109.091C129.39 109.091 129.027 108.998 128.722 108.812C128.419 108.625 128.185 108.364 128.021 108.028C127.858 107.691 127.776 107.299 127.776 106.852C127.776 106.405 127.858 106.011 128.021 105.67C128.185 105.328 128.415 105.061 128.708 104.869C129.004 104.676 129.348 104.58 129.742 104.58C129.969 104.58 130.194 104.617 130.415 104.693C130.637 104.769 130.839 104.892 131.021 105.062C131.202 105.231 131.347 105.455 131.455 105.733C131.563 106.011 131.617 106.354 131.617 106.761V107.045H128.254V106.466H130.935C130.935 106.22 130.886 106 130.788 105.807C130.691 105.614 130.553 105.461 130.373 105.349C130.195 105.238 129.985 105.182 129.742 105.182C129.475 105.182 129.244 105.248 129.049 105.381C128.856 105.511 128.707 105.682 128.603 105.892C128.499 106.102 128.447 106.328 128.447 106.568V106.955C128.447 107.284 128.504 107.563 128.617 107.793C128.733 108.02 128.893 108.193 129.097 108.312C129.302 108.43 129.54 108.489 129.81 108.489C129.987 108.489 130.146 108.464 130.288 108.415C130.432 108.364 130.556 108.288 130.66 108.188C130.764 108.085 130.844 107.958 130.901 107.807L131.549 107.989C131.481 108.208 131.366 108.402 131.205 108.568C131.044 108.733 130.845 108.862 130.609 108.955C130.372 109.045 130.106 109.091 129.81 109.091ZM132.637 109V104.636H133.285V105.295H133.33C133.41 105.08 133.554 104.904 133.762 104.77C133.97 104.635 134.205 104.568 134.467 104.568C134.516 104.568 134.577 104.569 134.651 104.571C134.725 104.573 134.781 104.576 134.819 104.58V105.261C134.796 105.256 134.744 105.247 134.663 105.236C134.583 105.223 134.499 105.216 134.41 105.216C134.198 105.216 134.008 105.26 133.842 105.349C133.677 105.437 133.546 105.558 133.45 105.713C133.355 105.866 133.308 106.042 133.308 106.239V109H132.637Z"
-                                fill="black" />
-                            <defs>
-                                <filter id="filter0_d_1522_1061" x="0" y="7" width="412" height="321"
-                                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                    <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                    <feColorMatrix in="SourceAlpha" type="matrix"
-                                        values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                    <feOffset dx="-10" dy="10" />
-                                    <feGaussianBlur stdDeviation="12.5" />
-                                    <feComposite in2="hardAlpha" operator="out" />
-                                    <feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.22 0" />
-                                    <feBlend mode="normal" in2="BackgroundImageFix"
-                                        result="effect1_dropShadow_1522_1061" />
-                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1522_1061"
-                                        result="shape" />
-                                </filter>
-                            </defs>
-                        </svg>
+                    <div class="rightbox">
 
                     </div>
                 </div>
-                <div class="flex-right">
-                    <div class="processtext">
-                        <h4 class="clipteal">Design</h4>
-                        <p>...allowing us to design a solution that meets your needs...</p>
+                <div class="grid-left">
+                    <div class="rightbox">
+
                     </div>
-                    <div class="processimage">
-                        <img src="./assets/process/Group 7873.png" alt="">
+                    <div class="leftbox">
+                        <div>
+                            <div class="clipteal">
+                                Design
+                            </div>
+                            <div>
+                                ...allowing us to design a solution that meets your needs...
+                            </div>
+                        </div>
+                        <div><img src="./assets/process/Group 7873.png" alt=""></div>
                     </div>
+
                 </div>
-                <div class="flex-left">
-                    <div class="processtext">
-                        <h4 class="clipteal">Develop</h4>
-                        <p>...keeping development quality high and costs low...</p>
+                <div class="grid-left">
+                    <div class="leftbox">
+                        <div>
+                            <div class="clipteal">
+                                Develop
+                            </div>
+                            <div>
+                                ...keeping development quality high and costs low...
+                            </div>
+                        </div>
+                        <div><img src="./assets/process/Group 31.png" alt=""></div>
                     </div>
-                    <div class="processimage">
-                        <img src="./assets/process/Group 31.png" alt="">
+                    <div class="rightbox">
 
                     </div>
                 </div>
-                <div class="flex-right">
-                    <div class="processtext">
-                        <h4 class="clipteal">Design</h4>
-                        <p>...allowing us to design a solution that meets your needs...</p>
+                <div class="grid-left">
+                    <div class="rightbox">
+
                     </div>
-                    <div class="processimage">
-                        <img src="./assets/process/Group 37.png" alt="">
+                    <div class="leftbox">
+                        <div>
+                            <div class="clipteal">
+                                Deliver
+                            </div>
+                            <div>
+                                ...resulting in a tailored solution that provides you value.
+                            </div>
+                        </div>
+                        <div><img src="./assets/process/Group 37.png" alt=""></div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -663,6 +706,137 @@
             </div>
         </div>
     </section>
+    <section id="contact">
+        <div class="container">
+
+            <div class="contactHeader">
+                <h2 class="contact-title">
+                    Get in Touch with our <span>Team</span>.
+                </h2>
+
+            </div>
+            <div class="contactWrapepr">
+                <div class="form-container">
+                    <form action="">
+                        <div class="iconcontactwrapper">
+                            <i class="fa-solid fa-circle-user"></i>
+                            <input type="text" name="" id="" placeholder="Full Name" required>
+                        </div>
+                        <div class="iconcontactwrapper">
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" name="" id="" placeholder="Email Address" required>
+                        </div>
+                        <div class="iconcontactwrapper">
+                            <i class="fa-solid fa-phone"></i>
+                            <input type="tel" name="" id="" placeholder="Phone Number" required>
+                        </div>
+                        <div class="iconcontactwrapper textareaWrappericon">
+                            <i class="fa-solid fa-comments"></i>
+                            <textarea name="" id="" rows="10" placeholder="Write Something here" required></textarea>
+
+                        </div>
+                        <div class="contactbtnwrapper">
+                            <button class="cta-btn" type="button">Submit</button>
+
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-imageContainer">
+                    <h4>“We specialise in helping our customers <br> digitise their business”</h4>
+                    <div class="imagecontact">
+                        <img src="./assets/testimonail/Ellipse 2 (2).png" alt="">
+                    </div>
+                    <div class="contact-info">
+                        <div class="contact-name">Emily rose</div>
+                        <div class="contact-postition">Dev Ops</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="lettalk">
+        <div class="informationtalkcont">
+            <div class="container">
+                <h3>Move even faster with Makos Infotech</h3>
+                <h4>Your guide in the digital age.</h4>
+                <div class="infotalkbtn">
+                    <button type="button" class=" btn-white">Let’s Talk</button>
+                    <button type="button" class=" btn-blue">Book Your Consultation</button>
+                    <button></button>
+                </div>
+            </div>
+        </div>
+        <div class="talkcont">
+            <div class="toptalk"></div>
+            <div class="bottomtalk"></div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="footerWrapper">
+                <div class="logofooter">
+                    <a href="">
+                        <img src="./assets/MakosLogo.svg" alt="">
+                    </a>
+
+                </div>
+                <div class="companyinfo">
+                    <div class="footertitle">Company Info</div>
+                    <div class="companydec">Reach out to us anytime and lets create a better future for all technology
+                        users
+                        together, forever. We are open to all types of collab offers and tons more.</div>
+
+                    <div class="officetime iconwrapfoot">
+                        <div class="iconfooter"><i class="fa-regular fa-clock"></i></div>
+                        <div class="ftime">
+                            Office Hours <br>
+                            Monday-Friday 9 AM-5 PM PST
+                        </div>
+                    </div>
+                    <div class="supporttime iconwrapfoot">
+                        <div class="iconfooter">
+                            <i class="fa-solid fa-headphones-simple"></i>
+                        </div>
+                        <div class="ftime">
+                            24/7 365
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contactinfofoo">
+                    <div class="footertitle">CONTACT INFO</div>
+                    <div class="fmail iconwrapfoot">
+                        <div class="iconfooter"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="ftime">makosinfotech@gmail.com</div>
+                    </div>
+                    <div class="fphone iconwrapfoot">
+                        <div class="iconfooter">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="ftime">858-227-4878</div>
+                    </div>
+                </div>
+                <div class="servicefootinfoo">
+                    <div class="footertitle">OUR SERVICES</div>
+                    <div class="listfoo">
+                        <p>Information Systems Strategy</p>
+                        <p>Custom Software</p>
+                        <p>Integration Services</p>
+                        <p>Business Automation</p>
+                        <p>Web, Ecommerce & Mobiel Apps</p>
+                        <p>Creative</p>
+                    </div>
+                </div>
+                <div class="loctionfoot">
+                    <div class="footertitle">OUR SERVICES</div>
+                    <div>
+                        <img src="./assets/location-map.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
