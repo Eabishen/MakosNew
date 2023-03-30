@@ -215,6 +215,10 @@ ul {
     transition: background-color .3s;
 }
 
+.nav__btn {
+    padding: 1.5rem 1.5rem;
+}
+
 .nav__link:hover {
     background-color: royalblue;
 }
