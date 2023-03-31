@@ -15,9 +15,9 @@
 
     /*========== Font and typography ==========*/
     /*.5rem = 8px | 1rem = 16px ...*/
-    --normal-font-size: .938rem;
-    --small-font-size: .813rem;
-    --smaller-font-size: .75rem;
+    --normal-font-size: .1rem;
+    --small-font-size: .9rem;
+    --smaller-font-size: .85rem;
 
     /*========== Font weight ==========*/
     --font-medium: 500;
@@ -244,6 +244,24 @@ ul {
     cursor: pointer;
 }
 
+.dropdown__learnbtn {
+    text-decoration: none;
+    color: #C6C6C6;
+}
+
+.dropdown__learnbtn button {
+    color: #C6C6C6;
+    background-color: #0060CE;
+    margin-block: 1rem;
+    transition: background-color 300ms ease;
+}
+
+.dropdown__learnbtn button:hover {
+    color: #C6C6C6;
+    background-color: #043cc9;
+
+}
+
 .dropdown__arrow {
     font-size: 1.5rem;
     font-weight: initial;
@@ -251,9 +269,28 @@ ul {
 }
 
 .dropdown__content,
-.dropdown__group,
+.dropdown__group a,
 .dropdown__list {
     display: grid;
+}
+
+.dropdown__maintext {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.dropdown__subtext {
+    font-size: 18px;
+    text-align: center;
+    color: #C6C6C6;
+}
+
+.dropdown_descrption {
+    color: #C6C6C6;
+
 }
 
 .dropdown__container {
@@ -267,7 +304,7 @@ ul {
     row-gap: 1.75rem;
 }
 
-.dropdown__group {
+.dropdown__group a {
     padding-left: 2.5rem;
     row-gap: .5rem;
 }
@@ -350,7 +387,7 @@ ul {
 
     .cust-nav li {
         display: flex;
-        /* padding-block: 2rem; */
+        padding-inline: 10px;
     }
 
     .nav__link {
@@ -367,7 +404,7 @@ ul {
     }
 
     .dropdown__container {
-        height: max-content;
+        height: 450px;
         position: absolute;
         left: 0;
         right: 0;
@@ -380,17 +417,29 @@ ul {
         transition: top .4s, opacity 0.3s;
     }
 
+    .dropdown__container::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+
+    .dropdown__container::-webkit-scrollbar-thumb {
+        background-color: rgba(255, 255, 255, 0.87);
+    }
+
     .dropdown__content {
-        grid-template-columns: repeat(4, max-content);
-        column-gap: 6rem;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 3rem;
         max-width: 1090px;
         margin-inline: auto;
     }
 
     .dropdown__group {
-        padding: 4rem 0;
+        padding: 2rem 0rem 0rem;
         align-content: baseline;
         row-gap: 1.25rem;
+    }
+
+    .dropdown__group:last-child {
+        padding-bottom: 4rem;
     }
 
     .dropdown__group:first-child,
@@ -437,6 +486,7 @@ ul {
     }
 
     .dropdown__item:hover>.dropdown__container {
+        overflow-y: scroll;
         top: 5rem;
         opacity: 1;
         pointer-events: initial;
