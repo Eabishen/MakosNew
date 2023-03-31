@@ -305,7 +305,7 @@ ul {
 }
 
 .dropdown__group a {
-    padding-left: 2.5rem;
+    padding-inline: 2.5rem;
     row-gap: .5rem;
 }
 
