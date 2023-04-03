@@ -117,8 +117,10 @@ ul {
     max-width: 1110px;
     margin-inline: auto;
     padding-block: 2rem;
-    gap: 4rem;
+    gap: 2rem;
 }
+
+
 
 .top-dropdown {
     display: flex;
@@ -136,15 +138,12 @@ ul {
     padding: 15px 20px;
     border-bottom: 1px solid #C6C6C6;
     transition: all 0.3s ease;
-    font-size: 20px;
-    font-weight: 300;
 }
 
 .top-dropdown a:hover {
     background-color: rgb(67, 141, 252);
 
 }
-
 
 .productflex-wrapper {
     display: flex;
@@ -647,6 +646,7 @@ ul {
 
     .dropdown__item {
         cursor: pointer;
+
     }
 
     .dropdown__item:hover .dropdown__arrow {

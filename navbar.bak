@@ -16,7 +16,7 @@
 
 <body>
     <!--=============== HEADER ===============-->
-    <header class="header">
+    <header class="header" id="headed">
         <nav class="cust-nav cust-container">
             <div class="nav__data">
                 <a href="">
@@ -33,111 +33,163 @@
             <!--=============== NAV MENU ===============-->
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
-                    <li>
-                        <a href="" class="nav__link">Home</a>
-                    </li>
-                    <li>
-                        <a href="" class="nav__link">About Us</a>
-                    </li>
-                    <li class="dropdown__item">
-                        <div class="nav__link dropdown__button">
-                            Service <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
-
-                        <div class="dropdown__container">
-                            <div class="dropdown__content">
-                                <div class="dropdown__group">
-                                    <div class="dropdown__icon">
-                                        <i class="ri-flashlight-fill"></i>
-                                    </div>
-                                    <span class="dropdown__title">Service We Offer</span>
-                                    <ul class="dropdown__list">
-                                        <li>
-                                            <a href="#" class="dropdown__link">Jobaskit</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown__link">Makos Digital</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown__link">Finistant</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="dropdown__group">
-                                    <div class="dropdown__icon">
-                                        <i class="ri-flashlight-fill"></i>
-                                    </div>
-                                    <span class="dropdown__title">Service We Offer</span>
-                                    <ul class="dropdown__list">
-                                        <li>
-                                            <a href="#" class="dropdown__link">Jobaskit</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown__link">Makos Digital</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown__link">Finistant</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
-                                <div class="dropdown__group">
-                                    <div class="dropdown__icon">
-                                        <i class="ri-flashlight-fill"></i>
-                                    </div>
-                                    <span class="dropdown__title">Service We Offer</span>
-                                    <ul class="dropdown__list">
-                                        <li>
-                                            <a href="#" class="dropdown__link">Jobaskit</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown__link">Makos Digital</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown__link">Finistant</a>
-                                        </li>
-                                    </ul>
-                                </div>
-
+                    <div class="nav__mainli">
+                        <li>
+                            <a href="" class="nav__link">Home</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">About Us</a>
+                        </li>
+                        <li class="dropdown__item">
+                            <div class="nav__link dropdown__button">
+                                Service <i class="ri-arrow-down-s-line dropdown__arrow"></i>
                             </div>
-                        </div>
-                    </li>
-                    <li>
-                        <a href="" class="nav__link">Blog</a>
-                    </li>
-                    <li class="dropdown__item">
-                        <div class="nav__link dropdown__button">
-                            Contact <i class="ri-arrow-down-s-line dropdown__arrow"></i>
-                        </div>
 
-                        <div class="dropdown__container">
-                            <div class="dropdown__content">
-                                <div class="dropdown__group">
-                                    <div class="dropdown__icon">
-                                        <i class="ri-flashlight-fill"></i>
+                            <div class="dropdown__container">
+                                <div class="dropdown__maintext">
+                                    Service we offer
+                                </div>
+                                <div class="dropdown__subtext">
+                                    <p>Choose what you need and we got you covered</p>
+
+                                </div>
+
+                                <div class="dropdown__content">
+
+                                    <div class="dropdown__group">
+                                        <a href="">
+                                            <div class="dropdown__icon">
+                                                <i class="ri-briefcase-line"></i>
+                                            </div>
+                                            <span class="dropdown__title">Jobaskit</span>
+                                            <div class="dropdown_descrption">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus
+                                                dolorum aspernatur sunt.
+                                            </div>
+                                            <a href="#" class="dropdown__learnbtn">
+                                                <button class="dropdowncust btn">Learn More</button>
+                                            </a>
+                                        </a>
                                     </div>
-                                    <span class="dropdown__title">Service We Offer</span>
-                                    <ul class="dropdown__list">
-                                        <li>
-                                            <a href="#" class="dropdown__link">Jobaskit</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown__link">Makos Digital</a>
-                                        </li>
-                                        <li>
-                                            <a href="#" class="dropdown__link">Finistant</a>
-                                        </li>
-                                    </ul>
+
+                                    <div class="dropdown__group">
+                                        <a href="">
+                                            <div class="dropdown__icon">
+                                                <i class="ri-window-2-line"></i>
+                                            </div>
+                                            <span class="dropdown__title">Makos Digital</span>
+                                            <div class="dropdown_descrption">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus
+                                                dolorum aspernatur sunt.
+                                            </div>
+                                            <a href="#" class="dropdown__learnbtn">
+                                                <button class="dropdowncust btn">Learn More</button>
+                                            </a>
+                                        </a>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <a href="">
+                                            <div class="dropdown__icon">
+                                                <i class="ri-mark-pen-line"></i>
+                                            </div>
+                                            <span class="dropdown__title">Finistant</span>
+                                            <div class="dropdown_descrption">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus
+                                                dolorum aspernatur sunt.
+                                            </div>
+                                            <a href="#" class="dropdown__learnbtn">
+                                                <button class="dropdowncust btn">Learn More</button>
+                                            </a>
+                                        </a>
+                                    </div>
+
+                                    <div class="dropdown__group">
+                                        <a href="">
+                                            <div class="dropdown__icon">
+                                                <i class="ri-mark-pen-line"></i>
+                                            </div>
+                                            <span class="dropdown__title">Finistant</span>
+                                            <div class="dropdown_descrption">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus
+                                                dolorum aspernatur sunt.
+                                            </div>
+                                            <a href="#" class="dropdown__learnbtn">
+                                                <button class="dropdowncust btn">Learn More</button>
+                                            </a>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown__group">
+                                        <a href="">
+                                            <div class="dropdown__icon">
+                                                <i class="ri-mark-pen-line"></i>
+                                            </div>
+                                            <span class="dropdown__title">Finistant</span>
+                                            <div class="dropdown_descrption">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus
+                                                dolorum aspernatur sunt.
+                                            </div>
+                                            <a href="#" class="dropdown__learnbtn">
+                                                <button class="dropdowncust btn">Learn More</button>
+                                            </a>
+                                        </a>
+                                    </div>
+                                    <div class="dropdown__group">
+                                        <a href="">
+                                            <div class="dropdown__icon">
+                                                <i class="ri-mark-pen-line"></i>
+                                            </div>
+                                            <span class="dropdown__title">Finistant</span>
+                                            <div class="dropdown_descrption">
+                                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat minus
+                                                dolorum aspernatur sunt.
+                                            </div>
+                                            <a href="#" class="dropdown__learnbtn">
+                                                <button class="dropdowncust btn">Learn More</button>
+                                            </a>
+                                        </a>
+                                    </div>
+
+
+                                    <!-- <div class="dropdown__group">
+                                        <div class="dropdown__icon">
+                                            <i class="ri-flashlight-fill"></i>
+                                        </div>
+                                        <span class="dropdown__title">Finistant</span>
+                                        <ul class="dropdown__list">
+                                            <li>
+                                                <a href="#" class="dropdown__link">Jobaskit</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Makos Digital</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="dropdown__link">Finistant</a>
+                                            </li>
+                                        </ul>
+                                    </div> -->
+
                                 </div>
                             </div>
-                        </div>
-                    </li>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">Blog</a>
+                        </li>
+                        <li>
+                            <a href="" class="nav__link">Contact</a>
+                        </li>
+                    </div>
+                    <div>
+
+                        <li class="nav__btn">
+                            <button class="cta-btn">Let's Talk</button>
+                        </li>
+                    </div>
                 </ul>
+
             </div>
         </nav>
     </header>
-
     <!--=============== MAIN JS ===============-->
     <script src="./js/main.js"></script>
 </body>

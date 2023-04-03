@@ -59,7 +59,7 @@ const toggleItem = (item) => {
         dropdownContainer.removeAttribute("style")
         item.classList.remove("show-dropdown")
     } else {
-        dropdownContainer.style.height = dropdownContainer.scrollHeight + 'px'
+        dropdownContainer.style.height = 'fit-content'
         item.classList.add('show-dropdown')
     }
 }
@@ -83,3 +83,5 @@ const removeStyle = () => {
 }
 
 addEventListener("resize", removeStyle)
+
+
