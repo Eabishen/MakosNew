@@ -306,7 +306,7 @@ ul {
 }
 
 .cust-container {
-    max-width: 1090px;
+    /* max-width: 1090px; */
     margin-inline: 1.5rem;
 }
 
