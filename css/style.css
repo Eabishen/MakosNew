@@ -749,7 +749,7 @@ ul {
 .toplanding .landing-h1 {
     font-size: 12vh;
     font-weight: 900;
-    margin-bottom: 2.5rem;
+    margin-block: 3rem 2.5rem;
 }
 
 .toplanding .text-overlay {
@@ -1304,6 +1304,28 @@ textarea {
     flex-direction: column;
 }
 
+.contactWrapepr .imagecontact {
+    width: 120px;
+    height: 120px;
+}
+
+.contactWrapepr .imagecontact img {
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 100vmax;
+    object-position: top;
+}
+
+.contactWrapepr .contact-info {
+    margin-block: 1rem;
+}
+
+.contact-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+
 #lettalk {
     position: relative;
     background: linear-gradient(180deg, #010109 0%, #292929 100%);
@@ -1551,6 +1573,7 @@ textarea {
     .toplanding .landing-h1 {
         font-size: 30px;
         line-height: 45px;
+        margin-block: 2rem;
     }
 
     .bottomlanding {
