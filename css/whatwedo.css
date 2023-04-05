@@ -664,4 +664,8 @@ select:-webkit-autofill {
 
     }
 
+    .rightcontactcontent {
+        margin-left: 10px;
+    }
+
 }
