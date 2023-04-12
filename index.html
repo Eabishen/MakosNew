@@ -22,7 +22,7 @@
     <header class="header" id="headed">
         <nav class="cust-nav container-fluid">
             <div class="nav__data">
-                <a href="">
+                <a href="index.html">
                     <i></i>
                     <img src="./assets/MakosLogo.svg" alt="">
                 </a>
@@ -38,7 +38,7 @@
                 <ul class="nav__list">
                     <div class="nav__mainli">
                         <li>
-                            <a href="#" class="nav__link">Home</a>
+                            <a href="index.html" class="nav__link">Home</a>
                         </li>
                         <!-- <li>
                             <a href="" class="nav__link">About Us</a>
@@ -60,11 +60,11 @@
                                         <div class="aboutusdrop downcontent">
                                             <h2>About Us</h2>
                                             <div class="productflex-grid">
-                                                <div><a href="">Who we are</a></div>
+                                                <div><a href="whoweare.html">Who we are</a></div>
                                                 <div><a href="">Our Goals</a></div>
                                                 <div><a href="">Board of Directors</a></div>
                                                 <div><a href="">Advisors</a></div>
-                                                <div><a href="">Management Team</a></div>
+                                                <div><a href="management-team.html">Management Team</a></div>
                                                 <div><a href="">Founder's Message</a></div>
                                                 <div><a href="">Awards / Recognition</a></div>
                                             </div>
@@ -93,11 +93,12 @@
                                                     <div class="overviewcontent downcontent">
                                                         <h2>About Us</h2>
                                                         <div class="productflex-wrapper">
-                                                            <div><a href="">Who we are</a></div>
+                                                            <div><a href="whoweare.html">Who we are</a></div>
                                                             <div><a href="">Our Goals</a></div>
                                                             <div><a href="">Board of Directors</a></div>
                                                             <div><a href="">Advisors</a></div>
-                                                            <div><a href="">Management Team</a></div>
+                                                            <div><a href="management-team.html">Management Team</a>
+                                                            </div>
                                                             <div><a href="">Founder's Message</a></div>
                                                             <div><a href="">Awards / Recognition</a></div>
                                                         </div>
@@ -121,7 +122,7 @@
                             <div class="dropdown__container">
                                 <div class="dropdown-wrapper">
                                     <div class="top-dropdown">
-                                        <a class="overviewcontentlink droplink_a" href="">Overview <i
+                                        <a class="overviewcontentlink droplink_a" href="whatwedo.html">Overview <i
                                                 class="ri-arrow-right-s-line"></i></a>
                                         <a class="servicecontentlink droplink_a" href="">Services <i
                                                 class="ri-arrow-right-s-line"></i></a>
@@ -134,7 +135,7 @@
                                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto optio
                                                 pariatur quas nisi cumque sit quo architecto a dolorem sint!</p>
                                             <button type="button" class="dropbutton cta-btn">
-                                                <a href="">Discover</a>
+                                                <a href="whatwedo.html">Discover</a>
                                             </button>
                                         </div>
                                         <div class="servicecontent downcontent">
@@ -177,7 +178,7 @@
                                                             pariatur quas nisi cumque sit quo architecto a dolorem sint!
                                                         </p>
                                                         <button type="button" class="dropbutton cta-btn">
-                                                            <a href="">Discover</a>
+                                                            <a href="whatwedo.html">Discover</a>
                                                         </button>
                                                     </div>
                                                 </div>
@@ -979,53 +980,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
 
-    <script>
-        $(document).ready(function () {
-
-            $(".overviewcontent").css("display", "block");
-            $(".overviewcontentlink").css("background-color", "rgb(67, 141, 252)");
-            $(".aboutusdrop").css("display", "block");
-            $(".aboutusdroplink").css("background-color", "rgb(67, 141, 252)");
-
-
-
-            $(".overviewcontentlink").hover(function () {
-                $(".overviewcontent").css("display", "block");
-                $(".servicecontent").css("display", "none");
-                $(".productcontent").css("display", "none");
-                $(".overviewcontentlink").css("background-color", "rgb(67, 141, 252)");
-                $(".servicecontentlink").css("background-color", "transparent");
-                $(".productcontentlink").css("background-color", "transparent");
-
-
-
-            });
-            $(".servicecontentlink").hover(function () {
-                $(".servicecontent").css("display", "block");
-                $(".overviewcontent").css("display", "none");
-                $(".productcontent").css("display", "none");
-                $(".servicecontentlink").css("background-color", "rgb(67, 141, 252)");
-                $(".overviewcontentlink").css("background-color", "transparent");
-                $(".productcontentlink").css("background-color", "transparent");
-
-
-
-            });
-            $(".productcontentlink").hover(function () {
-                $(".productcontent").css("display", "block");
-                $(".overviewcontent").css("display", "none");
-                $(".servicecontent").css("display", "none");
-                $(".productcontentlink").css("background-color", "rgb(67, 141, 252)");
-                $(".overviewcontentlink").css("background-color", "transparent");
-                $(".servicecontentlink").css("background-color", "transparent");
-            });
-
-            // $(".top-dropdown").mouseout(function () {
-            //     $(".overviewcontent").css("display", "block");
-
-            // })
-        })
-    </script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>

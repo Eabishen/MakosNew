@@ -20,8 +20,8 @@ window.addEventListener('scroll', stickynavbar);
 /*=============== SHOW MENU ===============*/
 const custNavbar = document.querySelector('.header');
 const navMenu = document.querySelector('.nav__menu');
-
 const headhieght = custNavbar.clientHeight;
+
 // navMenu.style.top = headhieght + "px";
 
 const showMenu = (toggleId, navId) => {
@@ -85,3 +85,17 @@ const removeStyle = () => {
 addEventListener("resize", removeStyle)
 
 
+
+function dynamicheight() {
+    const navheight = document.querySelector('.cust-nav').clientHeight;
+    const root = document.querySelector(':root')
+    const whopage = document.querySelector('#whowepageheader')
+
+    // whopage.style.marginTop = `${navheight}px`
+
+    root.style.setProperty('--header-navdynamic', `${navheight}px`)
+    // stl.style.setProperty('--header-navdynamic', `${navheight}px`)
+}
+
+window.addEventListener("DOMContentLoaded", dynamicheight)
+window.addEventListener("resize", dynamicheight)
