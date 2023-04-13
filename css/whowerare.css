@@ -198,6 +198,37 @@
 
 }
 
+.awardsHeading{
+    font-weight: 300;
+    color: #C6C6C6;
+    letter-spacing: 0.2px;
+    word-spacing: 2px;
+}
+
+
+.awardContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    row-gap:2rem;
+    place-items: center;
+    margin: 2rem  auto;
+}
+
+.awardimages{
+    width: 250px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 39, 89, 01);
+}
+
+.awardimages img{
+    aspect-ratio: 1/1;
+    width: 100%;
+    object-fit: cover;
+}
+
+
 @media screen and (max-width:1110px) {
     .carlist {
         /* width: auto; */
