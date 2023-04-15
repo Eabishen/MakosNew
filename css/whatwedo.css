@@ -175,7 +175,7 @@
 
 #webQandA {
     background: linear-gradient(180deg, #010108 0%, #010109 100%);
-    padding-block: 3rem;
+    padding-block: 3rem 0;
 }
 
 .webqandqheader {
@@ -185,24 +185,29 @@
     margin-bottom: 2rem;
 }
 
-#webQandA .accordion-button::after {
+.sameAccordion .accordion-button::after {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
     filter: invert(1);
 }
 
-#webQandA .accordion-button:not(.collapsed)::after {
+.sameAccordion .accordion-button:not(.collapsed)::after {
     background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23333' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' d='M0 8a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H1a1 1 0 0 1-1-1z' clip-rule='evenodd'/%3e%3c/svg%3e");
 }
 
-#webQandA .accordion {
+.sameAccordion .accordion {
     transition: all 0.3s ease;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
-#webQandA .accordion-button {
+.sameAccordion .accordion-item{
+    border-bottom: 1px solid #3f3f3f;
+
+}
+
+.sameAccordion .accordion-button {
     outline: none;
     border: none;
-    border-bottom: 1px solid #3f3f3f;
+    /* border-bottom: 1px solid #3f3f3f; */
     box-shadow: none;
     border-radius: 0;
     background: linear-gradient(90deg, #010108 0%, #010109 100%);
@@ -213,30 +218,39 @@
     transition: all 0.3s ease;
 
 }
+.sameAccordion .accordion-button:last-child{
 
-#webQandA .accordion-button:focus {
     border-bottom: 1px solid #3f3f3f;
+}
+
+.sameAccordion .accordion-body:last-child{
+
+    border-bottom: 1px solid #3f3f3f;
+}
+
+.sameAccordion .accordion-button:focus {
+    /* border-bottom: 1px solid #3f3f3f; */
     box-shadow: none;
 }
 
-#webQandA .accordion-button:not(.collapsed) {
+.sameAccordion .accordion-button:not(.collapsed) {
     background-color: #302f2f;
     color: #fff;
     border: none;
     padding-bottom: 1rem;
 }
 
-#webQandA .accordion-body {
+.sameAccordion .accordion-body {
     background: linear-gradient(90deg, #010108 0%, #010109 100%);
     color: #c6c6c6;
-    border-bottom: 1px solid #3f3f3f;
+    /* border-bottom: 1px solid #3f3f3f; */
     padding-bottom: 1.5rem;
     line-height: 34px;
     transition: all 0.3s ease;
 
 }
 
-#webQandA .accordion-body p {
+.sameAccordion .accordion-body p {
     width: 95%;
 }
 
@@ -370,7 +384,7 @@
 
 #solutions {
     background: linear-gradient(180deg, #010108 0%, #010109 100%);
-    padding-block: 3rem;
+    padding-block: 3rem 0;
 }
 
 .solutionheading {
