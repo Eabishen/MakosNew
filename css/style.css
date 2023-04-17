@@ -122,6 +122,11 @@ ul {
 }
 
 
+a:hover{
+    color: inherit;
+}
+
+
 /* Navbar */
 /* Navbar */
 /* Navbar */
@@ -150,7 +155,7 @@ ul {
 }
 
 
-.top-dropdown a {
+.top-dropdown .droplink_a {
     padding: 15px 20px;
     border-bottom: 1px solid #C6C6C6;
     transition: all 0.3s ease;
@@ -1257,6 +1262,7 @@ ul {
 }
 
 .contactWrapepr .form-container input,
+.contactWrapepr .form-container select,
 textarea {
     display: block;
     width: 100%;
