@@ -1446,6 +1446,7 @@ textarea {
 
 .companydec {
     margin-bottom: 0.9rem;
+    text-align: justify;
 }
 
 .iconwrapfoot {
@@ -1463,6 +1464,23 @@ textarea {
     font-weight: 300;
     color: #C6C6C6;
     margin-bottom: 0.5rem;
+}
+
+.listfoo a{
+    color: #C6C6C6;
+}
+
+.footerWrapper a{
+    transition: all 0.3s ease;
+}
+
+.footerWrapper a:hover{
+    color: white;
+}
+
+.listfoo > div{
+    margin-block: 0.5rem;
+
 }
 
 /* Mobile */
