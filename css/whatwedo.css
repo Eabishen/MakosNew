@@ -694,6 +694,10 @@ select:-webkit-autofill {
     .linkserviceWrapper {
         grid-template-columns: 1fr;
     }
+    .sameAccordion .accordion-button{
+        font-weight: 400;
+        font-size: 20px;
+    }
 
     .sameAccordion .accordion-button::after{
         width: 30px;
