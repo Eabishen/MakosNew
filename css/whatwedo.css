@@ -1,3 +1,5 @@
+
+
 ::placeholder {
     /* Chrome, Firefox, Opera, Safari 10.1+ */
     color: #fff;
@@ -16,7 +18,7 @@
 }
 
 /* .secondarybody{
-    background-color: rgb(228, 228, 228);
+    background-color: var(--servicepage-primary);
     color: rgb(24, 24, 24);
 } */
 
@@ -111,7 +113,7 @@
 #customerExperience {
     /* min-height: 100vh; */
     /* background: linear-gradient(180deg, #010108 0%, #010109 100%); */
-    background-color: rgb(228, 228, 228);
+    background-color: var(--servicepage-primary);
     padding-block: 3rem;
     font-weight: 200;
 }
@@ -152,8 +154,8 @@
 }
 
 #webfeature {
-    background: linear-gradient(180deg, #141414 50%, #161616 100%);
-    color: rgb(228, 228, 228);
+    background: linear-gradient(180deg, #1d1d1d 50%, #1f1f1f 100%);
+    color: var(--servicepage-primary);
     padding-block: 3rem;
 }
 
@@ -183,7 +185,7 @@
 }
 
 #webQandA {
-    background: rgb(228, 228, 228);
+    background: var(--servicepage-primary);
     color: rgb(24, 24, 24);
     padding-block: 3rem;
 }
@@ -230,7 +232,7 @@
     /* border-bottom: 1px solid #3f3f3f; */
     box-shadow: none;
     border-radius: 0;
-    background: rgb(228, 228, 228);
+    background: var(--servicepage-primary);
     color: rgb(24, 24, 24);
     font-size: 24px;
     font-weight: 600;
@@ -260,7 +262,7 @@
 }
 
 .sameAccordion .accordion-body {
-    background: rgb(228, 228, 228);
+    background: var(--servicepage-primary);
     color: rgb(24, 24, 24);
     /* border-bottom: 1px solid #3f3f3f; */
     padding-bottom: 1.5rem;
@@ -283,8 +285,8 @@
 
 #ourmainservice {
     padding-block: 3rem;
-    background: linear-gradient(180deg, #141414 50%, #161616 100%);
-    color: rgb(228, 228, 228);
+    background: linear-gradient(180deg, #1d1d1d 50%, #1f1f1f 100%);
+    color: var(--servicepage-primary);
 }
 
 
@@ -306,7 +308,7 @@
 
 #serviceLinks {
     /* background: linear-gradient(180deg, #010108 0%, #010109 100%); */
-    background-color: rgb(228, 228, 228);
+    background-color: var(--servicepage-primary);
     color: rgb(5, 5, 5);
     padding-block: 3rem;
 }
@@ -349,7 +351,7 @@
 
 
 #serviceTestimonals {
-    background: rgb(228, 228, 228);
+    background: var(--servicepage-primary);
     color: rgb(24, 24, 24);
     padding-block: 3rem;
 }
@@ -406,7 +408,7 @@
 
 #solutions {
     /* background: linear-gradient(180deg, #010108 0%, #010109 100%); */
-    background-color: rgb(228, 228, 228);
+    background-color: var(--servicepage-primary);
     color: rgb(24, 24, 24);
     padding-block: 3rem;
 }
@@ -443,7 +445,7 @@
 
 .whatwedocontact {
     /* background: linear-gradient(180deg, #010108 0%, #010109 100%); */
-    background-color: rgb(228, 228, 228);
+    background-color: var(--servicepage-primary);
     padding-block: 3rem;
 }
 
@@ -504,8 +506,8 @@
 }
 
 #lettalk{
-    background: rgb(228, 228, 228) !important;
-    color: rgb(228, 228, 228);
+    background: var(--servicepage-primary) !important;
+    color: var(--servicepage-primary);
 }
 
 .informationtalkcont{
