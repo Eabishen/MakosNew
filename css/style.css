@@ -164,6 +164,7 @@ a:hover{
     font-weight: 300;
 }
 
+
 .top-dropdown a:hover {
     background-color: rgb(67, 141, 252);
 
@@ -197,6 +198,20 @@ a:hover{
 .productflex-grid a:hover {
     color: #f0f0f0 !important;
 }
+
+.downcontent{
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from{
+        transform: translateY(20px);
+
+    }to {
+        transform: translateY(0);
+    }
+}
+
 
 .downcontent h2 {
     font-weight: 400;

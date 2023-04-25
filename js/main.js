@@ -99,3 +99,5 @@ function dynamicheight() {
 
 window.addEventListener("DOMContentLoaded", dynamicheight)
 window.addEventListener("resize", dynamicheight)
+
+
