@@ -205,7 +205,7 @@ a:hover{
 
 @keyframes slideIn {
     from{
-        transform: translateY(20px);
+        transform: translateY(10px);
 
     }to {
         transform: translateY(0);
