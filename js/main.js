@@ -101,3 +101,18 @@ window.addEventListener("DOMContentLoaded", dynamicheight)
 window.addEventListener("resize", dynamicheight)
 
 
+const para = document.querySelectorAll('.news-content');
+
+const trimmer = (someVale, number) => {
+
+
+    if (someVale.length <= number) {
+      return someVale.slice(0, number)
+    }
+    return someVale.slice(0, number)  
+}
+  
+  
+  para.forEach(item => {
+    item.textContent = trimmer(item.textContent, 200)
+  })

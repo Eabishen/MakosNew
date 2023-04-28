@@ -253,6 +253,117 @@
     font-size: 42px;
 }
 
+/* Press release */
+#press-release{
+    padding: 1rem 0;
+}
+
+.press-content{
+    margin-block: 2rem;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.press-content::before{
+    content: "⨀";
+    margin-right: 10px;
+    
+}
+
+/* Media Coverage */
+#media-coverage{
+    padding-block: 2rem ;
+}
+
+.newsoutercontainer{
+    display: grid;
+    place-items: center;
+}
+
+.newscontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.newscontainer a{
+    background-color: rgb(0, 39, 89);
+    border-radius: 10px;
+    border: 1px solid rgb(2, 17, 44);
+    height: auto;
+}
+
+.news-capsule, .news-content{
+    /* color: rgb(2, 17, 44); */
+    text-align: center;
+    padding: 1rem; 
+    font-weight: 400; 
+
+}
+
+.news-capsule{
+    font-size: 22px;
+}
+
+.news-content::after{
+    content: "...read more";
+    font-size: 14px;
+    margin-left: 5px;
+    font-weight: 200;
+}
+
+.newscontainer a i{
+    /* padding: 5px; */
+    border: 1px solid rgb(235, 235, 235);
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+/* Contact person */
+
+#contact-person{
+    padding-block: 2rem;
+    background: url('../assets/whoweare/contactpersonbg.png') no-repeat center;
+    background-size: cover;
+}
+.contactpersoncontainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.persontitle{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.personcard .personimage{
+    aspect-ratio: 1/1;
+    height: 240px;
+    margin-inline: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.contactperosninnfo{
+    text-align: center;
+}
+
+.contactperosninnfo .contoctnamer{
+    margin-block: 0.5rem;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.contactperosninnfo .contoctemail{
+    font-weight: 300;
+}
+
+.contactperosninnfo .contoctemail a{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
 
 @media screen and (max-width:1110px) {
     .carlist {
@@ -262,6 +373,15 @@
 
 @media screen and (max-width:950px) {
     .cardmanagement {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .docsgridinner{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .newscontainer{
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -307,6 +427,9 @@
         height: auto;
     }
 
+    .docsgridinner,.newscontainer{
+        grid-template-columns: 1fr;
+    }
 
 }
 
