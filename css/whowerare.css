@@ -217,6 +217,42 @@
     object-fit: cover;
 }
 
+/* Mandatory Disclosure */
+
+.docsgridouter{
+    display: grid;
+    place-items: center;
+    padding-block: 4rem;
+}
+
+.docsgridinner{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+.docscard{
+    text-align: center;
+    border: 1px solid ;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: transparent;
+    transition: all .3s ease;
+}
+
+.docscard:hover{
+    background-color: #f1f1f1;
+   color: rgb(5, 55, 131);
+}
+
+.docscard .docstitle{
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+
+.docscard i{
+    font-size: 42px;
+}
+
 
 @media screen and (max-width:1110px) {
     .carlist {
