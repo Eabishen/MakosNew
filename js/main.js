@@ -116,3 +116,9 @@ const trimmer = (someVale, number) => {
   para.forEach(item => {
     item.textContent = trimmer(item.textContent, 200)
   })
+
+  window.addEventListener("DOMContentLoaded", () => {
+    setTimeout(() => {
+        $('#development').modal('show');
+    }, 5000);
+  })

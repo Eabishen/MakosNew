@@ -1070,9 +1070,9 @@
             <div class="contactpageheading">Your Journey begins here</div>
             <div class="contactpagesec">Ready to collab with us?</div>
             <div class="contactpagebtn">
-              <a href="contactus.html">
-                <button class="conatctpagebtn">Contact us</button>
-              </a>
+             
+                <button class="conatctpagebtn" id="popbtn" data-bs-toggle="modal" data-bs-target="#development" >Contact us</button>
+             
             </div>
           </div>
         </div>
@@ -1284,6 +1284,158 @@
         </div>
       </div>
     </section>
+
+
+<!-- Modal -->
+<div class="modal fade" id="development" tabindex="-1" aria-labelledby="developmentLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title" id="developmentLabel">Get in Touch</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form class="formcust pt-0" action="">
+          <div class="col-12">
+            <label for="inputGroupPrepend" class="form-label"
+              >Your Name</label
+            >
+            <div class="inputcontainer">
+              <input
+                type="text"
+                class="form-control"
+                id="yourname"
+                aria-describedby="Name"
+                placeholder="Enter Name"
+                required
+              />
+
+              <div class="iconcontact">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 16 16"
+                  color="gray.800"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="inputGroupPrepend" class="form-label"
+              >Your Email</label
+            >
+            <div class="inputcontainer">
+              <input
+                type="email"
+                class="form-control"
+                id="yourEmail"
+                aria-describedby="Email"
+                placeholder="Enter Email"
+                required
+              />
+
+              <div class="iconcontact">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  color="gray.800"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0V0z"></path>
+                  <path
+                    d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <label for="inputGroupPrepend" class="form-label"
+              >Your Phone</label
+            >
+            <div class="inputcontainer">
+              <input
+                type="number"
+                class="form-control"
+                id="yourphone"
+                aria-describedby="phone"
+                placeholder="Enter phone"
+                required
+              />
+
+              <div class="iconcontact">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  stroke-width="0"
+                  viewBox="0 0 24 24"
+                  color="gray.800"
+                  height="1em"
+                  width="1em"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path fill="none" d="M0 0h24v24H0z"></path>
+                  <path
+                    d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12">
+            <label for="" class="form-label">Inquiry for</label>
+            <select name="" id="enquiry" class="developform">
+              <option
+                selected
+                value="value"
+              
+                disabled
+              >
+                Enquiry for
+              </option>
+              <option value=" Ecommerce">E-commerce websites</option>
+              <option value="blog">Blogging websites</option>
+              <option value="Portfolio">Portfolio websites</option>
+              <option value="social">Social networking websites</option>
+              <option value="infoweb">Informational websites</option>
+              <option value="businessweb">Business websites</option>
+              <option value="ngoweb">Non-profit websites</option>
+              <option value="personalweb">Personal websites</option>
+            </select>
+          </div>
+
+      
+          <div class="col-12 mt-4">
+            <button class="btn btn-primary fw-medium me-2" type="submit">
+              Send Message
+            </button>
+            <button
+              type="button"
+              class="btn btn-outline-primary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
