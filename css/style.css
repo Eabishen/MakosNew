@@ -1025,6 +1025,16 @@ a:hover{
     flex: 1;
     position: relative;
 }
+.itemsfeatures .svg-boxs{
+  flex: 0.1;
+}
+.itemsfeatures .content-boxs{
+  flex: 2;
+}
+.itemsfeatures svg{
+    width: 30px;
+    height: 30px;
+}
 
 .imgbox {
     width: 80%;
@@ -1729,8 +1739,15 @@ textarea {
 
     .imagefeature {
         flex-direction: column;
+        gap: 4rem;
 
     }
+
+    .itemsfeatures{
+        margin-block: 1rem;
+    }
+
+    
 
     .serviceBottomcontainer {
         align-items: center;
@@ -1813,6 +1830,10 @@ textarea {
     .bottomlanding .card-wrapper {
         gap: 1rem;
     }
+
+    .itemsfeatures .svg-boxs{
+        flex: 0.2;
+      }
 
     .servicecardrow {
         grid-template-columns: 1fr;

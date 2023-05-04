@@ -120,5 +120,5 @@ const trimmer = (someVale, number) => {
   window.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
         $('#development').modal('show');
-    }, 5000);
+    }, 10000);
   })
