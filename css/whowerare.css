@@ -89,9 +89,6 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011024",endCo
     box-shadow: 0 0 20px #03245338;
 }
 
-.jobanchoer{
-
-}
 
 .jobcontents{
     display: flex;
@@ -99,7 +96,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011024",endCo
     align-items: center;
 }
 
-.jobcontents div:last-of-type{
+.anchlink{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+   text-decoration-color: rgb(160, 160, 160);
+}
+
+.jobcontents .anchicon{
     
     transition: all 300ms ease;
 }
@@ -108,7 +111,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011024",endCo
     font-size: 20px;
 }
 
-.jobcontents:hover div:last-of-type{
+.jobanchoer:hover .anchicon{
     transform: translateX(05px);
 }
 
@@ -123,7 +126,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011024",endCo
 
 
 .makospara {
-    padding-bottom: 2rem;
+    padding-block: 0 2rem;
 }
 
 .makospara p {
@@ -146,6 +149,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011024",endCo
     gap: 2rem;
 }
 
+
 .iconheading{
     display: flex;
     align-items: baseline;
@@ -155,6 +159,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011024",endCo
 .ourcontent{
     color: #C6C6C6;
     font-weight: 300;
+    margin-bottom: 1rem;
 }
 
 .iconheading i{
@@ -469,9 +474,13 @@ padding-block: 2rem;
 @media screen and (max-width:500px) {
 
     #whowepageheader {
-        padding-block: 60px;
+        padding-block: 30px;
         /* padding-inline: 0.5rem; */
 
+    }
+
+    #makosinfo{
+        padding-block: 1rem;
     }
 
     .whowelanding {
@@ -489,13 +498,29 @@ padding-block: 2rem;
 
     .coverwho {
         grid-template-columns: 1fr;
+        gap:0;
+    }
+    .subtitleaboutus{
+        font-size: 22px;
     }
 
     .makosimg {
         height: auto;
     }
 
-    .cardmanagement {
+    .makospara{
+        padding-block: 5px;
+    }
+
+    .iconheading i{
+        font-size: 24px;
+    }
+
+    #culturesection{
+        padding-block: 2rem;
+    }
+
+    .cardmanagement, .culturegrid {
         grid-template-columns: 1fr;
     }
 
