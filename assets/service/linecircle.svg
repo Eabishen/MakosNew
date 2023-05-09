@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="630px" height="630px" viewBox="0 0 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>linecircle</title>
+    <g id="linecircle" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" fill-opacity="0" opacity="0.069643">
+        <g id="Group-9-Copy" transform="translate(13.000000, 13.000000)" fill="#D8D8D8" stroke="#00FFA8" stroke-width="2">
+            <circle id="Oval" cx="302.5" cy="302.5" r="301.5"></circle>
+            <circle id="Oval" cx="302.5" cy="302.5" r="261.5"></circle>
+            <circle id="Oval" cx="302.5" cy="302.5" r="214.5"></circle>
+            <circle id="Oval" cx="302.5" cy="302.5" r="164.5"></circle>
+            <circle id="Oval" cx="302.5" cy="302.5" r="118.5"></circle>
+        </g>
+    </g>
+</svg>

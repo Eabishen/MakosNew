@@ -537,6 +537,183 @@ radial-gradient(at 0% 0%, hsla(239,69%,13%,1) 0px, transparent 50%);
 padding-block: 2rem;
 }
 
+#influencer{
+    margin-top: var(--header-navdynamic);
+    padding-block: 2rem;
+}
+
+.influencerwrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.influ-left{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.blue-volietgradient{
+    color: #506BFC;
+    background: linear-gradient(90deg, #506BFC 50%, #9944fa 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+}
+
+.influ-left p{
+    color: #d4d4d4;
+    font-weight: 400;    
+    letter-spacing: 0.5px;
+}
+
+#influencer .infbtn{
+    width: fit-content;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.influ-right{
+    height: 480px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #f3d8e74b;
+}
+
+.influ-right img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+#highinv{
+    padding-block: 2rem;
+    position: relative;
+}
+
+.highheading{
+    text-align: center;
+}
+
+.highheading h2{
+    font-size: 42px;
+    margin-bottom: 2rem;
+}
+
+.invest-para{
+    font-size: 20px;
+    line-height: 30px;
+    color: #d4d4d4;
+}
+
+.line-circle{
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    width: 250px;
+}
+
+.highimage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.highimage img{
+    width: 55%;
+    object-fit: contain;
+}
+
+.hightesti{
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(90deg, #e64467 39.58%, #c56c5c 100%);
+    background-size: cover;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 80%;
+    font-weight: 700;
+    margin: 0 auto;
+}
+
+#highrules{
+    padding-block: 2rem;
+    position: relative;
+}
+
+#highrules .line-circle{
+    top: 50px;
+    right: 180px;
+    
+
+}
+
+#highrules .line-circle2{
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
+    width: 350px;
+}
+
+.highpoints{
+    text-align: start;
+
+}
+.singlepoints{
+    font-size: 20px;
+    margin-block: 1rem;
+    color: #d4d4d4;
+}
+
+.singlepoints::before{
+    content: "⨀";
+    margin-right: 5px;
+    color: #5b87ff;
+}
+
+.highaction{
+    text-align: center;
+    font-size: 32px;
+    margin-top: 2rem;
+    color: #d4d4d4;
+    font-weight: 700;
+}
+
+.highaction span{
+    color: #d9c69a;
+}
+
+.infbtncont{
+    text-align: center;
+    transform: translateY(-50px);
+}
+
+.infbtn{
+    display: inline-block;
+    min-width: 250px;
+    padding: 10px 15px;
+    border: 2px solid #506BFC;
+    box-shadow: 
+       -2.425px 19.8288px 22.1px rgba(80, 107, 252, 0.13);
+
+    border-radius: 10px;
+    background: linear-gradient(90deg, #00417b 50%, #0090d3 100%);
+    transition: all 0.3s ease;
+}
+
+.infbtn:hover{
+    box-shadow:   -0.425px 0.8288px 30.1px rgba(80, 106, 252, 0.322),
+    -5.06204px 0px 11.0815px rgba(80, 107, 252, 0.08),
+     -1.15046px 0px 5.35185px rgba(80, 107, 252, 0.05);
+     
+}
+
 @media screen and (max-width:1110px) {
     .carlist {
         /* width: auto; */
@@ -555,6 +732,18 @@ padding-block: 2rem;
 
     .newscontainer{
         grid-template-columns: 1fr;
+    }
+
+    .influ-right{
+        height: auto;
+    }
+    
+    .highimage{
+        padding: 1rem;
+    }
+
+    .hightesti{
+        width: 100%;
     }
 }
 
@@ -636,6 +825,63 @@ padding-block: 2rem;
     .docsgridinner,.newscontainer{
         grid-template-columns: 1fr;
     }
+
+    .highheading h2{
+        font-size: 30px;
+    }
+
+    .influencerwrapper{
+        grid-template-columns: 1fr;
+    }
+
+    .influ-right{
+        grid-row: 1;
+        grid-column: 1;
+    }
+
+    .invest-para{
+        text-align: justify;
+        font-size: 16px;
+    }
+
+    .highimage{
+        padding: 0;
+    }
+
+    .highimage img{
+        width: 100%;
+    }
+
+    .hightesti{
+     font-size: 24px;
+     font-weight: 600;
+     line-height: normal;
+    }
+
+    .singlepoints{
+        font-size: 18px;
+    }
+
+    .infbtncont{
+        transform: translateY(0);
+    }
+    .infbtn{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    #highrules .line-circle2{
+        left: 0;
+        bottom: 0;
+        width: 150px;
+    }
+    
+#highrules .line-circle{
+    top: 0px;
+    right: 10px;
+width: 120px;
+}
+
+
 
 }
 
