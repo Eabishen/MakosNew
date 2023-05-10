@@ -23,9 +23,11 @@
 } */
 
 #whatwedoMaincover {
-    padding-block: 6rem 3rem;
+    padding-block: 3rem;
     position: relative;
+    overflow: hidden;
 
+    margin-top: var(--header-navdynamic);
 }
 
 .whatwedomainimg {
@@ -37,8 +39,19 @@
     z-index: -1;
     height: 100%;
     width: 100%;
+    animation: zoomin 5s ease;
 }
 
+
+@keyframes zoomin {
+    from{
+        transform: scale(1.1);
+    }
+
+    to{
+        transform: scale(1);
+    }
+}
 
 .whatwedosmallerheading {
     padding-top: 2rem;
