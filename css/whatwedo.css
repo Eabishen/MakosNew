@@ -23,7 +23,7 @@
 } */
 
 #whatwedoMaincover {
-    padding-block: 3rem;
+    padding-block: 2rem;
     position: relative;
     overflow: hidden;
 
@@ -95,10 +95,10 @@
 
 .whatwedowrapper button .iconwrapperwhatwedo:hover i {
 
-    animation: slideIn 1000ms ease;
+    animation: slideRight 1000ms ease;
 }
 
-@keyframes slideIn {
+@keyframes slideRight {
     0% {
         transform: translateX(-10px);
     }
@@ -470,7 +470,14 @@
     margin-left: 1.5rem;
     letter-spacing: 1px;
     margin-block: 2rem;
-    width: 100vh;
+}
+
+.solutionlistsx li{
+    list-style: disc;
+    margin-left: 1.5rem;
+    letter-spacing: 1px;
+    margin-block: 1rem;
+    line-height: 1.7;
 }
 
 .solutionlists li:first-of-type {
@@ -516,9 +523,10 @@
 }
 
 .contactpageheading {
-    font-size: 42px;
+    font-size: 2.5rem;
     font-weight: 400;
     color: rgb(24, 24, 24);
+
 }
 
 .contactpagebtn .conatctpagebtn {
@@ -649,7 +657,7 @@ select:-webkit-autofill {
 
 
 #casehighlights{
-    padding: 3rem 2rem;
+    padding-block: 3rem 2rem;
     background-color:var(--servicepage-primary);
     color: rgb(24, 24, 24);
 }
@@ -668,6 +676,99 @@ select:-webkit-autofill {
     top: 0;
     left: 0;
     content: "";
+}
+
+#casestudyone,
+#casestudytwo,
+#casestudythree,
+#casestudyfour,
+#casestudyfive{
+    padding-block: 2rem;
+    background-color:var(--servicepage-primary);
+    color: rgb(24, 24, 24);
+    
+}
+
+.casestudywidth{
+    width: 70%;
+}
+
+.casestudywidth p {
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: .03125rem;
+    color: #000;
+}
+
+.casestudycolor{
+    margin-top: 5rem;
+    position: relative;
+    display: block;
+    font-size: 2.5rem;
+    color: #0060CE;
+    line-height: 2.5rem;
+}
+
+.caseimgwrapper{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-block: 2rem;
+}
+
+.casegraph{
+    height: 80%;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.casesmallgroup{
+    margin-block: 2rem;
+}
+
+
+#boarddirectors{
+    padding-block: 2rem;
+    background-color:var(--servicepage-primary);
+    color: rgb(24, 24, 24);
+}
+
+    
+
+.wholepagewrapper{
+    display: grid;
+    gap: 4rem;
+    margin-top: 3rem;
+}
+.twogridwrapper{
+    display: flex;
+    gap: 2rem;
+}
+
+.boardimg{
+    margin:0 auto;
+    width: 80%;
+}
+
+.leftboard, .rightboard{
+    flex-basis: calc(50% - 1rem);
+}
+
+
+.leftboard img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+.rightboard{
+    margin-top: 2rem;
+}
+
+.boarddirspara p{
+    font-size: 1.125rem;
+    line-height: 2rem;
+    letter-spacing: .5px;
 }
 
 @media screen and (max-width:900px) {
@@ -735,9 +836,30 @@ select:-webkit-autofill {
         display: none;
     }
 
+    .casestudywidth{
+        width: 100%;
+    }
+
+    #boarddirectors .contactpageheading{
+        font-size: 2rem;
+    }
+
+    .boardimg{
+        width: 100%;
+    }
+
+    .rightboard{
+        margin-top: 0;
+    }
+    
+
 }
 
 @media screen and (max-width:590px) {
+
+    .whatwedowrapper .heading{
+        font-size: 2rem;
+    }
 
     .middleexperiencewrapper {
 
@@ -786,6 +908,32 @@ select:-webkit-autofill {
 
     .rightcontactcontent {
         margin-left: 10px;
+    }
+
+    .serviceofusx .iconscontain{
+        font-size: 24px;
+    }
+
+   
+
+    .contactpageheading{
+        font-size: 28px;
+    }
+
+    .casestudycolor{
+        font-size: 26px;
+    }
+
+    .caseimgwrapper{
+        margin-block: 1rem;
+    }
+
+    .twogridwrapper{
+        flex-direction: column;
+    }
+
+    .twogridwrapper.colreverse{
+        flex-direction: column-reverse;
     }
 
 }
