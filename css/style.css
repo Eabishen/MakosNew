@@ -1603,7 +1603,7 @@ textarea {
     padding-top: 3rem;
     display: grid;
     gap: 1rem;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1.2fr 1fr 1fr 1fr;
     font-weight: 300;
 }
 
@@ -1629,6 +1629,15 @@ textarea {
     
 }
 
+
+.listaddress{
+    font-size: 14px;
+    color: #C6C6C6;
+}
+
+.listaddress p{
+    margin-bottom: 0.5rem;
+}
 .companydec {
     margin-bottom: 0.9rem;
     text-align: justify;
