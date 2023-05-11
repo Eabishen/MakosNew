@@ -340,6 +340,21 @@
     border-bottom: 1px solid #363636;
 }
 
+.serviceofusx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid #b9b9b9;
+}
+
+.serviceofusx .iconscontain{
+    font-size: 32px;
+    font-weight: 400;
+    color: #193bb6;
+
+}
+
 .iconscontain {
     display: flex;
     align-items: baseline;
@@ -356,6 +371,17 @@
 .iconarrow {
     transition: all 0.3s ease;
     font-size: 20px;
+}
+
+.iconarrowdown{
+    font-size: 16px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100vmax;
+    border: 1px solid;
 }
 
 .serviceofus:hover .iconarrow {
@@ -427,7 +453,7 @@
 }
 
 .solutionheading {
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
@@ -442,10 +468,9 @@
 .solutionlists li {
     list-style: disc;
     margin-left: 1.5rem;
-    font-weight: 200;
     letter-spacing: 1px;
     margin-block: 2rem;
-    width: 95ch;
+    width: 100vh;
 }
 
 .solutionlists li:first-of-type {
@@ -620,6 +645,29 @@ select:-webkit-autofill {
     aspect-ratio: 9/16;
     object-fit: cover;
     opacity: 0.5;
+}
+
+
+#casehighlights{
+    padding: 3rem 2rem;
+    background-color:var(--servicepage-primary);
+    color: rgb(24, 24, 24);
+}
+
+.casehightlightwrapper{
+    padding-left: 2rem;
+    position: relative;
+}
+
+.casehightlightwrapper::before{
+    background: #0060CE;
+    width: 4px;
+    border-radius: 10px;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    content: "";
 }
 
 @media screen and (max-width:900px) {

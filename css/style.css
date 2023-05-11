@@ -1815,6 +1815,8 @@ textarea {
     }
     .mobile-view{
         display: block;
+        margin: 0 auto;
+        width: 60%;
     }
 
     .toplanding .landing-h1 {
