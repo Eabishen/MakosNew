@@ -88,19 +88,19 @@ addEventListener("resize", removeStyle)
 
 function dynamicheight() {
     const navheight = document.querySelector('.cust-nav').clientHeight;
-    const secondarynvheight = document.querySelector('.secondary-sticky').clientHeight;
     const root = document.querySelector(':root')
     const whopage = document.querySelector('#whowepageheader')
 
     // whopage.style.marginTop = `${navheight}px`
 
     root.style.setProperty('--header-navdynamic', `${navheight}px`)
-    root.style.setProperty('--secondarynavheight', `${secondarynvheight}px`)
     // stl.style.setProperty('--header-navdynamic', `${navheight}px`)
 }
 
+
 window.addEventListener("DOMContentLoaded", dynamicheight)
 window.addEventListener("resize", dynamicheight)
+
 
 
 const para = document.querySelectorAll('.news-content');
@@ -127,6 +127,14 @@ const trimmer = (someVale, number) => {
 
 
 //  For secondary sticky
+
+function dynamicheighttwo() {
+  const secondarynvheight = document.querySelector('.secondary-sticky').clientHeight;
+  const root = document.querySelector(':root')
+
+
+  root.style.setProperty('--secondarynavheight', `${secondarynvheight}px`)
+}
  
 
 window.addEventListener('scroll', function() {
@@ -150,8 +158,10 @@ window.addEventListener('scroll', function() {
   
       if (activeSection && activeSection.id === targetSectionId) {
         anchorTag.classList.add('activex');
+        dynamicheighttwo()
       } else {
         anchorTag.classList.remove('activex');
+        dynamicheighttwo()
       }
     });
   
