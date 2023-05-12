@@ -748,7 +748,7 @@ select:-webkit-autofill {
 
 .boardimg{
     margin:0 auto;
-    width: 80%;
+    /* width: 80%; */
 }
 
 .leftboard, .rightboard{
@@ -761,9 +761,9 @@ select:-webkit-autofill {
     height: 100%;
     width: 100%;
 }
-.rightboard{
+/* .rightboard{
     margin-top: 2rem;
-}
+} */
 
 .boarddirspara p{
     font-size: 1.125rem;
@@ -835,23 +835,35 @@ select:-webkit-autofill {
     .sideimage {
         display: none;
     }
+    
 
     .casestudywidth{
         width: 100%;
     }
 
     #boarddirectors .contactpageheading{
-        font-size: 2rem;
+        font-size: 1.5rem;
+    }
+
+    .leftboard img{
+        height: auto;
+        width: 60%;
+        
     }
 
     .boardimg{
-        width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
 
-    .rightboard{
-        margin-top: 0;
+    .twogridwrapper{
+        flex-direction: column;
     }
-    
+
+    .twogridwrapper.colreverse{
+        flex-direction: column-reverse;
+    }
+ 
 
 }
 
@@ -928,12 +940,20 @@ select:-webkit-autofill {
         margin-block: 1rem;
     }
 
-    .twogridwrapper{
-        flex-direction: column;
+    .leftboard img{
+        height: auto;
+        width: 100%;
+        
     }
 
-    .twogridwrapper.colreverse{
-        flex-direction: column-reverse;
+    .boardimg{
+        margin: 0;
+        text-align: center;
+    }
+    
+    .boarddirspara p{
+        line-height: 1.7;
+        font-size: 16px;
     }
 
 }
