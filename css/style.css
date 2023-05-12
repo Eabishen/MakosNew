@@ -3,6 +3,7 @@
 @font-face {
     font-family: custFont;
     src: url(/assets/custfont/SouthAustralia-Regular.ttf);
+    font-display: fallback;
 }
 
 /*=============== VARIABLES CSS ===============*/
