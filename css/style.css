@@ -9,6 +9,8 @@
 :root {
     --header-height: 3.5rem;
     --header-navdynamic: 0;
+
+    --secondarynavheight: 0;
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     --first-color: hsl(220, 68%, 54%);
@@ -1274,13 +1276,14 @@ a:hover{
     flex-direction: column;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    min-height: 300px;
-    min-width: 340px;
+    justify-content: flex-start;
+    min-height: 420px;
     position: relative;
     padding: 1rem;
+    flex-basis: calc(50% - 1rem);
 
 }
+
 
 .test-img {
     position: absolute;
@@ -1298,16 +1301,16 @@ a:hover{
 }
 
 .testimonialcard .commenttesti {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-    letter-spacing: 0em;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 0.3px;
     text-align: center;
 
 }
 
 .nametesti {
-    margin-top: 1rem;
+    margin-top: auto;
     font-size: 800;
     font-size: 20px;
     color: #C6C6C6;
@@ -1685,8 +1688,6 @@ textarea {
     }
 
     .testimonialcard{
-        min-width: auto;
-        width: 100%;
     }   
 }
 
@@ -1736,7 +1737,8 @@ textarea {
     }
 
     .testimonialcard {
-        min-width: fit-content;
+        min-height: fit-content;
+        width: 100%;
     }
 
     .contentsecond .subheader h2 {

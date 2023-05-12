@@ -678,6 +678,52 @@ select:-webkit-autofill {
     content: "";
 }
 
+.secondary-sticky{
+    position: fixed;
+    width: 100%;
+    top: var(--header-navdynamic);
+    background-color: var(--servicepage-primary);
+    padding: 10px 30px;
+    border-bottom: 1px solid #c4c4c4;
+    display: none;
+    z-index: 10;
+}
+.secondary-sticky.show{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.secondary-sticky i{
+    font-size: 34px;
+}
+
+.stickysecondaryanchor{
+    padding: 10px;
+    font-size: 18px;
+}
+.progress-bar {
+    position: fixed;
+    top: calc(var(--header-navdynamic) + var(--secondarynavheight));
+    left: 0;
+    width: 0;
+    height: 4px;
+    background-color: #007bff;
+    z-index: 9999;
+    transition: width 0.3s ease;
+    display: none;
+}
+
+.progress-bar.show{
+display: block;
+}
+  
+
+.activex{
+    color: #0059be;
+    font-weight: 500;
+}
+
 #casestudyone,
 #casestudytwo,
 #casestudythree,
@@ -769,6 +815,16 @@ select:-webkit-autofill {
     font-size: 1.125rem;
     line-height: 2rem;
     letter-spacing: .5px;
+}
+
+.imagefounder{
+    height: 100%;
+}
+
+.imagefounder img{
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
 }
 
 @media screen and (max-width:900px) {
@@ -936,6 +992,11 @@ select:-webkit-autofill {
         font-size: 26px;
     }
 
+    #mobilehide{
+    display: none;        
+    }
+
+
     .caseimgwrapper{
         margin-block: 1rem;
     }
@@ -956,4 +1017,5 @@ select:-webkit-autofill {
         font-size: 16px;
     }
 
+    
 }

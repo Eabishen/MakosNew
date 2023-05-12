@@ -88,12 +88,14 @@ addEventListener("resize", removeStyle)
 
 function dynamicheight() {
     const navheight = document.querySelector('.cust-nav').clientHeight;
+    const secondarynvheight = document.querySelector('.secondary-sticky').clientHeight;
     const root = document.querySelector(':root')
     const whopage = document.querySelector('#whowepageheader')
 
     // whopage.style.marginTop = `${navheight}px`
 
     root.style.setProperty('--header-navdynamic', `${navheight}px`)
+    root.style.setProperty('--secondarynavheight', `${secondarynvheight}px`)
     // stl.style.setProperty('--header-navdynamic', `${navheight}px`)
 }
 
@@ -122,3 +124,55 @@ const trimmer = (someVale, number) => {
         $('#development').modal('show');
     }, 10000);
   })
+
+
+//  For secondary sticky
+ 
+
+window.addEventListener('scroll', function() {
+    var scrollPosition = window.pageYOffset;
+    var sections = document.querySelectorAll('.activationsection');
+    var activeSection = null;
+  
+    sections.forEach(function(section) {
+      var sectionOffsetTop = section.offsetTop;
+      var sectionOffsetBottom = sectionOffsetTop + section.offsetHeight;
+  
+      if (scrollPosition >= sectionOffsetTop && scrollPosition < sectionOffsetBottom) {
+        activeSection = section;
+        return;
+      }
+    });
+  
+    var anchorTags = document.querySelectorAll('.stickysecondaryanchor');
+    anchorTags.forEach(function(anchorTag) {
+      var targetSectionId = anchorTag.getAttribute('href').slice(1); // Remove the leading #
+  
+      if (activeSection && activeSection.id === targetSectionId) {
+        anchorTag.classList.add('activex');
+      } else {
+        anchorTag.classList.remove('activex');
+      }
+    });
+  
+    var serviceLinksSection = document.querySelector('#perctenagecalc');
+    var sectionOffsetTop = serviceLinksSection.offsetTop;
+    var sectionHeight = serviceLinksSection.offsetHeight;
+    var scrollPercentage = ((scrollPosition - sectionOffsetTop) / sectionHeight) * 100;
+    var progressBar = serviceLinksSection.querySelector('.progress-bar');
+    progressBar.style.width = scrollPercentage + '%';
+  
+    var firstSection = document.querySelector('#casestudyone');
+    var lastSection = document.querySelector('#casestudyfive');
+    var stickySecondary = document.querySelector('.secondary-sticky');
+    var progressBarElement = document.querySelector('.progress-bar');
+  
+    if (scrollPosition >= firstSection.offsetTop && scrollPosition <= (lastSection.offsetTop + lastSection.offsetHeight)) {
+      stickySecondary.classList.add('show');
+      progressBarElement.classList.add('show');
+    } else {
+      stickySecondary.classList.remove('show');
+      progressBarElement.classList.remove('show');
+    }
+  });
+  
