@@ -304,6 +304,20 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#011024",endCo
     object-fit: cover;
 }
 
+.awardlist{
+    margin-block: 1.5rem 1rem;
+}
+.awardlist ul{
+    margin-left: 1rem;
+}
+
+.awardlist li{
+    color: #C6C6C6;
+    list-style: disc;
+    line-height: 1.5;
+    margin-block: 1rem;
+}
+
 /* Mandatory Disclosure */
 
 .docsgridouter{

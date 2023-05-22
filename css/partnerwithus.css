@@ -1,0 +1,437 @@
+body{
+    counter-reset: my-sec-counter;
+}
+
+
+
+#partnerwithstudents{
+    margin-top: var(--header-navdynamic);
+    padding-block: 2rem;
+    background-color: #0a1322;
+}
+
+.partner-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+}
+
+.partner-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.partner-left h1{
+    font-size: 3.5em;
+}
+
+.partner-left p{
+    color: #cecece;
+    font-size: 16px;
+    line-height: 1.6;
+    width: 90%;
+}
+
+.partner-right{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 30px rgba(53, 60, 128, 0.466);
+}
+
+#pillsandfeatures{
+    padding-block: 2rem;
+    background: #0F2027;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0a1322, #0a1831, #0a1322);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0a1322, #0a1831, #0a1322); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.pills-container{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.pills{
+    padding: 10px 15px;
+    background-color: #41464e;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pills.active{
+    box-shadow: 0px 6px 0 #3164b6;
+}
+
+.partner-contents{
+    margin-block: 2rem;
+    color: #cecece;
+    display: none;
+    animation: slideIn 0.3s ease;
+}
+
+.partner-contents.show{
+    display: block;
+}
+
+.partner-heading{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.partner-image{
+    width: 100%;
+    
+}
+
+#pillsandfeatures .partner-wrapper{
+    gap: 1.5rem;
+}
+
+.partner-image img{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    margin-inline: auto;
+}
+
+.partner-heading span{
+    color: #3d75cf;
+
+}
+.partner-content p{
+    line-height: 1.7;
+}
+
+.partner-content ul{
+    padding-left: 20px;
+}
+
+.partner-content ul li{
+    list-style: disc;
+    margin-block: 0.5rem;
+}
+
+.partner-icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.partner-icon i{
+    font-size: 28px;
+    color: #598ee2;
+}
+
+ .partner-subheading{
+    font-size: 28px;
+    font-weight: 400;
+    color: #ffff;
+}
+
+.partner-cardwrapper{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.partner-card{
+    padding: 1rem;
+    background-color: #030811;
+    box-shadow: 0px 0px 30px rgba(53, 60, 128, 0.466);
+    border-radius: 05px;
+}
+
+.partner-processgrid{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+}
+
+.process-card{
+    padding: 1rem;
+    background-color: #1c2638;
+    position: relative;
+    padding-top: 4rem;
+    box-shadow: 0px 0px 30px rgba(53, 60, 128, 0.24);
+
+}
+
+.process-card::after{
+    counter-increment: my-sec-counter;
+    content: "Step " counter(my-sec-counter) " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #436eb3;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    font-weight: 700;
+
+}
+
+.overallcover{
+    position: relative;
+}
+
+.viewmore{
+    background-color: transparent;
+    padding: 1rem;
+    top: var(--header-navdynamic);
+   z-index: 100;
+}
+.flexview{
+    align-items: center;
+    justify-content: space-between;
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    .partner-wrapper{
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        gap: 1rem;
+    }
+
+    .partner-right{
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .partner-left h1{
+        font-size: 2em;
+    }
+
+    .viewmore{
+        background-color: #16253f;
+        position: sticky;
+    }
+
+    .flexview{
+        display: flex;
+    }
+    
+    .pills-container{
+        display: none;
+    }
+    
+    .pills-container.visible{
+        display: flex;
+        margin-block: 2rem 1rem;
+    }
+
+    .partner-image{
+        grid-row-start: 1;
+        grid-column-start: 1;
+    }
+
+    .partner-cardwrapper, .partner-processgrid{
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+
+/* Table */
+
+#partnerwithstudents.annouce{
+    background-color: #050d1b;
+
+}
+
+#annoucmenttable{
+    padding-block: 2rem;
+    background: #050d1b;
+}
+
+
+#annoucmenttable table{
+    border-collapse:collapse;
+}
+
+#annoucmenttable .table-bordered>:not(caption)>*>*{
+    border-width: 0;
+}
+
+#annoucmenttable .table-bordered>:not(caption)>*{
+    border-color: #8d9094 ;
+
+}
+
+#annoucmenttable .table>:not(caption)>*>*{
+    padding: 2rem 1rem;
+}
+
+
+#annoucmenttable tr{
+    background-color: #11151d;
+    color: #eee;
+    font-weight: 400;
+}
+
+
+#annoucmenttable .fullicons{
+   text-align: center;
+}
+
+#annoucmenttable .iconsize{
+    font-size: 26px;
+  }
+
+#annoucmenttable.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th{
+    word-break: break-word;
+  }
+  
+   #annoucmenttable .wrapperx td{
+      word-break: break-all;
+      background-color: #050d1b;
+    }
+    
+   #annoucmenttable .dataTables_filter {
+      float: right;
+    }
+    
+   #annoucmenttable .table > tbody > tr:hover td{
+      color: #eee;
+      /* font-weight: 600; */
+    }
+  
+   #annoucmenttable .pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover{
+      background-color: #11226e;
+      border-color: #11226e;
+    }
+    
+    @media only screen and (min-width: 768px) {
+     #annoucmenttable .table {
+        table-layout: fixed;
+        max-width: 100% !important;
+      }
+    }
+    
+   #annoucmenttable thead {
+      background: #dbe0e7;
+    }
+  
+   #annoucmenttable .pagination>li>a, .pagination>li>span{
+      color: #033863;
+    }
+    
+   #annoucmenttable .table td:nth-child(2) {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    
+   #annoucmenttable .highlight {
+      background: #033863;
+      color: #eee;
+    }
+    
+    @media only screen and (max-width: 767px) {
+      /* Force table to not be like tables anymore */
+    #annoucmenttable  table,
+  #annoucmenttable  thead,
+   #annoucmenttable tbody,
+   #annoucmenttable th,
+  #annoucmenttable  td,
+  #annoucmenttable  tr {
+        display: block;
+      }
+    
+      /* Hide table headers (but not display: none;, for accessibility) */
+     #annoucmenttable thead tr,
+   #annoucmenttable tfoot tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+      }
+    
+     #annoucmenttable td {
+        /* Behave  like a "row" */
+        border: none;
+        border-bottom: 1px solid #eee;
+        position: relative;
+        padding-left: 50% !important;
+      }
+    
+     #annoucmenttable td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+      }
+    
+     #annoucmenttable .table td:nth-child(1) {
+        background: #001d46;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+      }
+  
+     #annoucmenttable tr:hover td:nth-child(1){
+          color: #033863;
+      }
+  
+     #annoucmenttable .table-hover > tbody > tr:hover {
+          background-color: #2f3c79;
+          color: #eee;
+        }
+    
+       #annoucmenttable div.dataTables_x div.dataTables_info{
+          white-space:normal;
+          margin-bottom: 10px;
+        }
+
+        #annoucmenttable .table>:not(caption)>*>*{
+            padding: 0.5rem;
+        }
+  
+       #annoucmenttable .fullicons{
+            text-align: start;
+        }
+      /*
+      Label the data
+      */
+    #annoucmenttable  td:nth-of-type(1):before {
+        content: "Full Name";
+      }
+    
+    #annoucmenttable  td:nth-of-type(2):before {
+        content: "Email";
+      }
+    
+    #annoucmenttable  td:nth-of-type(3):before {
+        content: "Phone Number";
+      }
+    
+    #annoucmenttable  td:nth-of-type(4):before {
+        content: "Purpose";
+      }
+    
+    #annoucmenttable  td:nth-of-type(5):before {
+        content: "Query";
+      }
+    
+    #annoucmenttable  td:nth-of-type(6):before {
+        content: "Location";
+      }
+    
+     #annoucmenttable .dataTables_length {
+        display: none;
+      }
+    }

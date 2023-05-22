@@ -794,6 +794,7 @@ display: block;
 
 .boardimg{
     margin:0 auto;
+    height: 100%;
     /* width: 80%; */
 }
 
@@ -826,6 +827,52 @@ display: block;
     object-fit: cover;
     border-radius: 10px;
 }
+
+.titledesgination{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+}
+
+.personsocial{
+
+    margin-block: 0.5rem 1rem;
+}
+
+.socaillinks{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.socaillinks a i{
+    font-size: 22px;
+    transition: all 0.3s ease;
+}
+
+.socaillinks a{
+    padding: 1rem;
+}
+
+.socaillinks a:first-child{
+    padding-left: 0;
+}
+
+.socaillinks a:hover i{
+    scale: 1.3;
+}
+.socaillinks a:hover i:not(hover){
+    filter: blur(8);
+    color: #0059be;
+}
+
+.titledesgination a{
+    text-decoration: underline;
+    text-underline-offset: 05px;
+    text-decoration-color: #808080;
+}
+
+
 
 @media screen and (max-width:900px) {
     .whatwedowrapper .heading {

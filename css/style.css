@@ -978,7 +978,7 @@ a:hover{
     display: flex;
     align-items: start;
     gap: 2rem;
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
 }
 
 .secondiconwrapper {
@@ -1263,26 +1263,29 @@ a:hover{
 
 }
 
-.testimonialcardwrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-}
 
-.testimonialcard {
+.swiper-slide{
     background: linear-gradient(0deg, #161E25, #161E25), #393E35;
     border-radius: 10px;
     text-align: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 420px;
     position: relative;
-    padding: 1rem;
-    flex-basis: calc(50% - 1rem);
+    padding: 0 1rem;
+    padding-bottom: 3rem;
+    min-height: 305px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+.swiper-pagination-bullets.swiper-pagination-horizontal{
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #8debd2 !important;
+}
+
+.swiper-pagination-bullet{
+    background-color: #C6C6C6;
 }
 
 
@@ -1294,12 +1297,12 @@ a:hover{
 }
 
 .qoutetesti {
-    padding-block: 3rem 1rem;
+    padding-block:1rem;
 }
 
-.qoutetesti img {
+/* .qoutetesti img {
     width: 80%;
-}
+} */
 
 .testimonialcard .commenttesti {
     font-size: 14px;
@@ -1311,7 +1314,7 @@ a:hover{
 }
 
 .nametesti {
-    margin-top: auto;
+    margin-top: 2rem;
     font-size: 800;
     font-size: 20px;
     color: #C6C6C6;
@@ -1736,11 +1739,11 @@ textarea {
         flex-direction: column;
         gap: 5rem;
     }
-
+/* 
     .testimonialcard {
         min-height: fit-content;
         width: 100%;
-    }
+    } */
 
     .contentsecond .subheader h2 {
         font-size: 24px;
