@@ -1264,7 +1264,7 @@ a:hover{
 }
 
 
-.swiper-slide{
+#testimonials .swiper-slide{
     background: linear-gradient(0deg, #161E25, #161E25), #393E35;
     border-radius: 10px;
     text-align: center;
@@ -1280,11 +1280,11 @@ a:hover{
 .swiper-pagination-bullets.swiper-pagination-horizontal{
 }
 
-.swiper-pagination-bullet-active {
+#testimonials .swiper-pagination-bullet-active {
     background-color: #8debd2 !important;
 }
 
-.swiper-pagination-bullet{
+#testimonials .swiper-pagination-bullet{
     background-color: #C6C6C6;
 }
 

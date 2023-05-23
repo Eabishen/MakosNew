@@ -420,7 +420,7 @@ body{
       }
     
     #annoucmenttable  td:nth-of-type(4):before {
-        content: "Type of announcement";
+        content: "Announcement type";
       }
     
     #annoucmenttable  td:nth-of-type(5):before {
@@ -431,3 +431,13 @@ body{
         display: none;
       }
     }
+    @media only screen and (max-width: 325px) {
+        #annoucmenttable td:before {
+            font-size: 13px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            left: 0;
+            top: 10px;
+        }
+    }
+     
